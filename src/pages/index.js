@@ -13,53 +13,18 @@ import {
   AiFillLinkedin,
   AiOutlineWhatsApp,
 } from "react-icons/ai";
-
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
+import Carousel from "./../components/Carousel/Carousel.jsx";
 
 import vector1 from "./../../public/images/vector-1.svg";
-import dummy from "./../../public/images/dummy.png"
+import dummy from "./../../public/images/dummy.png";
+import HumanVector from "./../../public/images/human-vector.png";
 
 const inter = Inter({ subsets: ["latin"] });
 
-const responsive = {
-  desktop: {
-    breakpoint: { max: 3000, min: 1024 },
-    items: 3,
-    slidesToSlide: 3, // optional, default to 1.
-  },
-  tablet: {
-    breakpoint: { max: 1024, min: 464 },
-    items: 2,
-    slidesToSlide: 2, // optional, default to 1.
-  },
-  mobile: {
-    breakpoint: { max: 464, min: 0 },
-    items: 1,
-    slidesToSlide: 1, // optional, default to 1.
-  },
-};
 
-// const getDeviceType = () => {
-//   const ua = navigator.userAgent;
-//   if (/(tablet|ipad|playbook|silk)|(android(?!.*mobi))/i.test(ua)) {
-//     return "tablet";
-//   }
-//   if (
-//     /Mobile|iP(hone|od)|Android|BlackBerry|IEMobile|Kindle|Silk-Accelerated|(hpw|web)OS|Opera M(obi|ini)/.test(
-//       ua
-//     )
-//   ) {
-//     return "mobile";
-//   }
-//   return "desktop";
-// };
 
 export default function Home() {
-  // let device
-  // useEffect(
-  //    device = getDeviceType()
-  //   )
+
   return (
     <>
       <Navbar />
@@ -123,33 +88,19 @@ export default function Home() {
         </div>
       </section>
       <section className="h-screen w-full">
-        <div className="w-[1000px] h-[700px]">
-          <div>
-          <Carousel
-            swipeable={false}
-            draggable={false}
-            showDots={true}
-            responsive={responsive}
-            ssr={true} // means to render carousel on server-side.
-            infinite={true}
-            // autoPlay={device !== "mobile" ? true : false}
-            autoPlaySpeed={1000}
-            keyBoardControl={true}
-            customTransition="all .5"
-            transitionDuration={500}
-            containerClass="carousel-container"
-            removeArrowOnDeviceType={["tablet", "mobile"]}
-            // deviceType={device}
-            dotListClass="custom-dot-list-style"
-            itemClass="carousel-item-padding-40-px"
-            
-          >
-            <div>Item 1</div>
-            <div>Item 2</div>
-            <div>Item 3</div>
-            <div>Item 4</div>
-            <ProjectCard src={dummy} title="dummy test project" desc="project gabut untuk testing personal website"/>
-          </Carousel>
+        <div className="bg-fluid-1 w-full h-[1080px]">
+          <div className="flex">
+            <div className="pt-36 pl-8 ">
+              <Image
+                src={HumanVector}
+                alt="programmer vector"
+                width={346}
+                height={876}
+              />
+            </div>
+            <div className="w-[1400px] pt-[370px] pl-20">
+              <Carousel/>
+            </div>
           </div>
           {/* <ProjectCard/> */}
         </div>

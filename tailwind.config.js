@@ -14,7 +14,8 @@ module.exports = {
       },
       backgroundImage: {
         // 'home-1':"url('/images/background/home1.png')",
-        'landing-1':"url('/images/bg-landing-page.svg')"
+        'landing-1':"url('/images/bg-landing-page.svg')",
+        'fluid-1' :"url('/images/bg-fluid-1.png')"
       }
     },
   },
