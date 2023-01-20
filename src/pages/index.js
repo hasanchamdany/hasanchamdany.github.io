@@ -98,7 +98,8 @@ export default function Home() {
                 height={876}
               />
             </div>
-            <div className="w-[1400px] pt-[370px] pl-20">
+            <div className="w-[1400px] pt-[390px] pl-20">
+              <h1 className="text-5xl font-bold text-white">Recent Project</h1>
               <Carousel/>
             </div>
           </div>
