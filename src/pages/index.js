@@ -21,27 +21,25 @@ import HumanVector from "./../../public/images/human-vector.png";
 
 const inter = Inter({ subsets: ["latin"] });
 
-
-
 export default function Home() {
-
   return (
     <>
       <Navbar />
       <section className=" h-screen w-full">
         <div className="bg-landing-1 w-full h-[863.73px]">
           {/* <h1>test woe</h1> */}
-          <div className="flex flex-row">
-            <div className="mt-40 ml-32">
+          <div className="md:flex flex-row block">
+            <div className="md:mt-40 mt-0 md:pt-0 sm:pt-36 pt-20 md:ml-32 ml-4 max-w-[583.67px]">
               <Image
                 src={vector1}
                 alt="vector frontend"
                 width={583.67}
                 height={585.35}
+                layout={"responsive"}
               />
             </div>
-            <div className="mt-40 ml-[450px] text-white font-bold">
-              <div className="mt-40 text-6xl">
+            <div className="md:mt-40 mt-10 md:ml-[450px] ml-8 text-white font-bold">
+              <div className="md:mt-40 mt-10 md:text-6xl text-3xl">
                 <h1>HASAN</h1>
                 <h1>CHAMDANY</h1>
               </div>
@@ -58,11 +56,11 @@ export default function Home() {
                   1000,
                 ]}
                 speed={50} // Custom Speed from 1-99 - Default Speed: 40
-                style={{ fontSize: "2em" }}
+                style={{ fontSize: "1.5em" }}
                 wrapper="span" // Animation will be rendered as a <span>
                 repeat={Infinity} // Repeat this Animation Sequence infinitely
               />
-              <div className="w-[500px] max-h-[10px] bg-gradient-to-r from-[#E86319] to-[#FFE603] rounded-xl mt-2 text-transparent">
+              <div className="md:w-[500px] w-[300px] max-h-[10px] bg-gradient-to-r from-[#E86319] to-[#FFE603] rounded-xl mt-2 text-transparent">
                 {" "}
                 p
               </div>
@@ -87,7 +85,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="h-screen w-full">
+      <section className="sm:block hidden h-screen w-full">
         <div className="bg-fluid-1 w-full h-[1080px]">
           <div className="flex">
             <div className="pt-36 pl-8 ">
@@ -98,9 +96,9 @@ export default function Home() {
                 height={876}
               />
             </div>
-            <div className="w-[1400px] pt-[390px] pl-20">
+            <div className="w-[1400px]  pt-[390px] pl-20">
               <h1 className="text-5xl font-bold text-white">Recent Project</h1>
-              <Carousel/>
+              <Carousel />
             </div>
           </div>
           {/* <ProjectCard/> */}
