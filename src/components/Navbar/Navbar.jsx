@@ -72,14 +72,14 @@ const Navbar = () => {
                     </Link>
                   </li>
                   <li className="text-n-blue">
-                    <Link href="/">
+                    <Link href="https://github.com/hasanchamdany">
                       <div className="font-poppins font-semibold ">
                         Project
                       </div>
                     </Link>
                   </li>
                   <li className="text-n-blue">
-                    <Link href="/">
+                    <Link href=" https://wa.me/6281330666660">
                       <div className="font-poppins font-semibold ">
                        Contect Me
                       </div>

@@ -65,21 +65,21 @@ export default function Home() {
                 p
               </div>
               <div className="flex w-full h-fit mt-2 justify-start">
-                <button>
+                <a href="https://www.instagram.com/hasan.chamdany/">
                   <AiFillInstagram className="w-[40px] h-[40px] mx-1" />
-                </button>
-                <button>
+                </a>
+                <a href="https://github.com/hasanchamdany">
                   <AiFillGithub className="w-[40px] h-[40px] mx-1" />
-                </button>
-                <button>
+                </a>
+                <a href=" https://wa.me/6281330666660">
                   <AiOutlineWhatsApp className="w-[40px] h-[40px] mx-1" />
-                </button>
-                <button>
+                </a>
+                <a href="https://www.linkedin.com/in/muchammad-hasan-chamdany-090a1a196/">
                   <AiFillLinkedin className="w-[40px] h-[40px] mx-1" />
-                </button>
-                <button>
+                </a>
+                <a href="mailto:hasanchamdany@gmail.com">
                   <AiFillMail className="w-[40px] h-[40px] mx-1" />
-                </button>
+                </a>
               </div>
             </div>
           </div>
