@@ -29,7 +29,10 @@ export default function Home() {
         <div className="bg-landing-1 w-full h-[863.73px]">
           {/* <h1>test woe</h1> */}
           <div className="md:flex flex-row block">
-            <div className="md:mt-40 mt-0 md:pt-0 sm:pt-36 pt-20 md:ml-32 ml-4 max-w-[583.67px]" data-aos="fade-up">
+            <div
+              data-aos="fade"
+              className="md:mt-40 mt-0 md:pt-0 sm:pt-36 pt-20 md:ml-32 ml-4 max-w-[583.67px]"
+            >
               <Image
                 src={vector1}
                 alt="vector frontend"
@@ -39,9 +42,12 @@ export default function Home() {
               />
             </div>
             <div className="md:mt-40 mt-10 md:ml-[450px] ml-8 text-white font-bold">
-              <div className="md:mt-40 mt-10 md:text-6xl text-3xl" data-aos="fade-right">
-                <h1>HASAN</h1>
-                <h1>CHAMDANY</h1>
+              <div
+                className="md:mt-40 mt-10 md:text-6xl text-3xl"
+                data-aos="fade-right"
+              >
+                <h1 data-aos="fade-right">HASAN</h1>
+                <h1 data-aos="fade-right">CHAMDANY</h1>
               </div>
               <TypeAnimation
                 // Same String at the start will only be typed once, initially
