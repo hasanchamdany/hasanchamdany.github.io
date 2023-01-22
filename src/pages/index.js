@@ -29,7 +29,7 @@ export default function Home() {
         <div className="bg-landing-1 w-full h-[863.73px]">
           {/* <h1>test woe</h1> */}
           <div className="md:flex flex-row block">
-            <div className="md:mt-40 mt-0 md:pt-0 sm:pt-36 pt-20 md:ml-32 ml-4 max-w-[583.67px]">
+            <div className="md:mt-40 mt-0 md:pt-0 sm:pt-36 pt-20 md:ml-32 ml-4 max-w-[583.67px]" data-aos="fade-up">
               <Image
                 src={vector1}
                 alt="vector frontend"
@@ -39,7 +39,7 @@ export default function Home() {
               />
             </div>
             <div className="md:mt-40 mt-10 md:ml-[450px] ml-8 text-white font-bold">
-              <div className="md:mt-40 mt-10 md:text-6xl text-3xl">
+              <div className="md:mt-40 mt-10 md:text-6xl text-3xl" data-aos="fade-right">
                 <h1>HASAN</h1>
                 <h1>CHAMDANY</h1>
               </div>
@@ -71,7 +71,7 @@ export default function Home() {
                 <a href="https://github.com/hasanchamdany">
                   <AiFillGithub className="w-[40px] h-[40px] mx-1" />
                 </a>
-                <a href=" https://wa.me/6281330666660">
+                <a href="https://wa.me/6281330666660">
                   <AiOutlineWhatsApp className="w-[40px] h-[40px] mx-1" />
                 </a>
                 <a href="https://www.linkedin.com/in/muchammad-hasan-chamdany-090a1a196/">
