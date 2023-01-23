@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Link from "next/link";
 import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "@next/font/google";
@@ -14,6 +15,8 @@ import {
   AiOutlineWhatsApp,
 } from "react-icons/ai";
 import Carousel from "./../components/Carousel/Carousel.jsx";
+
+
 
 import vector1 from "./../../public/images/vector-1.svg";
 import dummy from "./../../public/images/dummy.png";
@@ -41,7 +44,7 @@ export default function Home() {
                 layout={"responsive"}
               />
             </div>
-            <div className="md:mt-40 mt-10 md:ml-[450px] ml-8 text-white font-bold">
+            <div className="md:mt-40 mt-10 md:ml-[450px] ml-8 text-white font-bold block">
               <div
                 className="md:mt-40 mt-10 md:text-6xl text-3xl"
                 data-aos="fade-right"
@@ -71,21 +74,21 @@ export default function Home() {
                 p
               </div>
               <div className="flex w-full h-fit mt-2 justify-start">
-                <a href="https://www.instagram.com/hasan.chamdany/">
+                <Link href="https://www.instagram.com/hasan.chamdany/">
                   <AiFillInstagram className="w-[40px] h-[40px] mx-1" />
-                </a>
-                <a href="https://github.com/hasanchamdany">
+                </Link>
+                <Link href="https://github.com/hasanchamdany">
                   <AiFillGithub className="w-[40px] h-[40px] mx-1" />
-                </a>
-                <a href="https://wa.me/6281330666660">
+                </Link>
+                <Link href="https://wa.me/6281330666660">
                   <AiOutlineWhatsApp className="w-[40px] h-[40px] mx-1" />
-                </a>
-                <a href="https://www.linkedin.com/in/muchammad-hasan-chamdany-090a1a196/">
+                </Link>
+                <Link href="https://www.linkedin.com/in/muchammad-hasan-chamdany-090a1a196/">
                   <AiFillLinkedin className="w-[40px] h-[40px] mx-1" />
-                </a>
-                <a href="mailto:hasanchamdany@gmail.com">
+                </Link>
+                <Link href="mailto:hasanchamdany@gmail.com">
                   <AiFillMail className="w-[40px] h-[40px] mx-1" />
-                </a>
+                </Link>
               </div>
             </div>
           </div>
