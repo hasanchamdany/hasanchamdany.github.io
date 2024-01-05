@@ -10,6 +10,10 @@ module.exports = {
       colors: {
         current: "currentColor",
         // 's-orange': '#E16A3D',
+        'dark-base': '#1A1A1E',
+        'dark-grey': '#252531',
+        'medium-grey': '#353543',
+        'light-gray': '#4B4B61',
         
       },
       backgroundImage: {
