@@ -28,8 +28,8 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <section className=" h-screen w-full">
-        <div className="bg-landing-1 w-full h-[863.73px]">
+      <section className=" h-screen w-full ">
+        <div className="bg-dark-base  w-full h-screen">
           {/* <h1>test woe</h1> */}
           <div className="md:flex flex-row block">
             <div
@@ -95,7 +95,7 @@ export default function Home() {
         </div>
       </section>
       <section className="sm:block hidden h-screen w-full">
-        <div className="bg-fluid-1 w-full h-[1080px]">
+        <div className="bg-dark-base w-full h-[1080px]">
           <div className="flex">
             <div className="pt-36 pl-8 ">
               <Image
