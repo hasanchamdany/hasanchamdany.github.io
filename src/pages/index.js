@@ -31,20 +31,9 @@ export default function Home() {
       <section className=" h-screen w-full ">
         <div className="bg-dark-base  w-full h-screen">
           {/* <h1>test woe</h1> */}
-          <div className="md:flex flex-row block">
-            <div
-              data-aos="fade"
-              className="md:mt-40 mt-0 md:pt-0 sm:pt-36 pt-20 md:ml-32 ml-4 max-w-[583.67px]"
-            >
-              <Image
-                src={vector1}
-                alt="vector frontend"
-                width={583.67}
-                height={585.35}
-                layout={"responsive"}
-              />
-            </div>
-            <div className="md:mt-40 mt-10 md:ml-[450px] ml-8 text-white font-bold block">
+          <div className="md:flex flex-row justify-between mx-36 items-center h-screen block">
+            
+            <div className=" text-white font-bold block">
               <div
                 className="md:mt-40 mt-10 md:text-6xl text-3xl"
                 data-aos="fade-right"
@@ -90,6 +79,18 @@ export default function Home() {
                   <AiFillMail className="w-[40px] h-[40px] mx-1" />
                 </Link>
               </div>
+            </div>
+            <div
+              data-aos="fade"
+              className=" max-w-[583.67px]"
+            >
+              <Image
+                src={vector1}
+                alt="vector frontend"
+                width={583.67}
+                height={585.35}
+                layout={"responsive"}
+              />
             </div>
           </div>
         </div>
