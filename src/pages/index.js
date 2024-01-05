@@ -16,13 +16,12 @@ import {
 } from "react-icons/ai";
 import Carousel from "./../components/Carousel/Carousel.jsx";
 
-
-
-import vector1 from "./../../public/images/vector-1.svg";
+import photo from "./../../public/images/photo.svg";
 import dummy from "./../../public/images/dummy.png";
 import HumanVector from "./../../public/images/human-vector.png";
 
 const inter = Inter({ subsets: ["latin"] });
+
 
 export default function Home() {
   return (
@@ -32,10 +31,9 @@ export default function Home() {
         <div className="bg-dark-base  w-full h-screen">
           {/* <h1>test woe</h1> */}
           <div className="md:flex flex-row justify-between mx-36 items-center h-screen block">
-            
-            <div className=" text-white font-bold block">
+            <div className="  text-white flex flex-col font-bold ">
               <div
-                className="md:mt-40 mt-10 md:text-6xl text-3xl"
+                className="md:mt-40 mt-10 md:text-6xl text-3xl justify-start"
                 data-aos="fade-right"
               >
                 <h1 data-aos="fade-right">HASAN</h1>
@@ -81,15 +79,26 @@ export default function Home() {
               </div>
             </div>
             <div
-              data-aos="fade"
-              className=" max-w-[583.67px]"
+              className="flex justify-center items-center"
+              style={{
+                width: "523px",
+                height: "514px",
+                borderRadius: "267px",
+                background: "linear-gradient(226deg, #EB8B32 0%, #DCC535 100%)",
+                boxShadow: "0px 0px 26.2px 12px #E0B835",
+              }}
             >
               <Image
-                src={vector1}
+                src={photo}
                 alt="vector frontend"
-                width={583.67}
-                height={585.35}
-                layout={"responsive"}
+                width={465}
+                height={465}
+                className="circularImage"
+                style={{
+                  borderRadius: "228px",
+                  boxShadow: "0px 0px 30px 12px #E2AE34 inset",
+                }}
+                // layout={"responsive"}
               />
             </div>
           </div>
