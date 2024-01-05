@@ -22,7 +22,6 @@ import HumanVector from "./../../public/images/human-vector.png";
 
 const inter = Inter({ subsets: ["latin"] });
 
-
 export default function Home() {
   return (
     <>
@@ -31,36 +30,50 @@ export default function Home() {
         <div className="bg-dark-base  w-full h-screen">
           {/* <h1>test woe</h1> */}
           <div className="md:flex flex-row justify-between mx-36 items-center h-screen block">
-            <div className="  text-white flex flex-col font-bold ">
+            <div className="   flex flex-col gap-2 font-bold ">
+              <div className="text-white">
+                <h2 className="text-4xl">Hello there!, I am</h2>
+              </div>
               <div
-                className="md:mt-40 mt-10 md:text-6xl text-3xl justify-start"
+                className=" md:text-6xl text-3xl justify-start text-gradient-to-r from-[#B822FF] to-[#0D8BFF]"
                 data-aos="fade-right"
               >
-                <h1 data-aos="fade-right">HASAN</h1>
-                <h1 data-aos="fade-right">CHAMDANY</h1>
+                <h1
+                  data-aos="fade-right"
+                  className="bg-gradient-to-r from-[#B822FF] to-[#0D8BFF] text-transparent bg-clip-text"
+                  style={{
+                    color:
+                      "linear-gradient(99deg, #B822FF 3.09%, #0D8BFF 100%)",
+                  }}
+                >
+                  Hasan Chamdany
+                </h1>
               </div>
-              <TypeAnimation
-                // Same String at the start will only be typed once, initially
-                sequence={[
-                  "I am a Web Developer",
-                  1000,
-                  "I am a UI/UX Designer",
-                  1000,
-                  "I am a Mobile Developer",
-                  1000,
-                  "I am a Data Engineer",
-                  1000,
-                ]}
-                speed={50} // Custom Speed from 1-99 - Default Speed: 40
-                style={{ fontSize: "1.5em" }}
-                wrapper="span" // Animation will be rendered as a <span>
-                repeat={Infinity} // Repeat this Animation Sequence infinitely
-              />
+              <div className="text-white text-xl">
+                <TypeAnimation
+                  // Same String at the start will only be typed once, initially
+                  sequence={[
+                    "Web Developer",
+                    1000,
+                    "UI/UX Designer",
+                    1000,
+                    "Mobile Developer",
+                    1000,
+                    "Data Engineer",
+                    1000,
+                  ]}
+                  speed={50} // Custom Speed from 1-99 - Default Speed: 40
+                  style={{ fontSize: "1.5em" }}
+                  wrapper="span" // Animation will be rendered as a <span>
+                  repeat={Infinity} // Repeat this Animation Sequence infinitely
+                  className="text-white"
+                />
+              </div>
               <div className="md:w-[500px] w-[300px] max-h-[10px] bg-gradient-to-r from-[#E86319] to-[#FFE603] rounded-xl mt-2 text-transparent">
                 {" "}
                 p
               </div>
-              <div className="flex w-full h-fit mt-2 justify-start">
+              <div className="flex w-full h-fit mt-2 justify-start text-white">
                 <Link href="https://www.instagram.com/hasan.chamdany/">
                   <AiFillInstagram className="w-[40px] h-[40px] mx-1" />
                 </Link>
