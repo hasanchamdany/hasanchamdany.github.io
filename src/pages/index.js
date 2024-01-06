@@ -32,10 +32,10 @@ export default function Home() {
           <div className="md:flex flex-row justify-between mx-36 items-center h-screen block">
             <div className="   flex flex-col gap-2 font-bold ">
               <div className="text-white">
-                <h2 className="text-4xl">Hello there!, I am</h2>
+                <h2 className="text-5xl">Hello there!, I am</h2>
               </div>
               <div
-                className=" md:text-6xl text-3xl justify-start text-gradient-to-r from-[#B822FF] to-[#0D8BFF]"
+                className=" md:text-7xl text-3xl justify-start text-gradient-to-r from-[#B822FF] to-[#0D8BFF]"
                 data-aos="fade-right"
               >
                 <h1
@@ -49,7 +49,11 @@ export default function Home() {
                   Hasan Chamdany
                 </h1>
               </div>
-              <div className="text-white text-xl">
+              <div className="text-white text-2xl flex items-center gap-6">
+                <div className="w-[22px] h-[75px] bg-gradient-to-b from-[#E86319] to-[#FFE603] rounded-xl mt-2 text-transparent">
+                  {" "}
+                  p
+                </div>
                 <TypeAnimation
                   // Same String at the start will only be typed once, initially
                   sequence={[
@@ -57,9 +61,9 @@ export default function Home() {
                     1000,
                     "UI/UX Designer",
                     1000,
-                    "Mobile Developer",
+                    "IoT Developer",
                     1000,
-                    "Data Engineer",
+                    "Videographer",
                     1000,
                   ]}
                   speed={50} // Custom Speed from 1-99 - Default Speed: 40
@@ -69,11 +73,21 @@ export default function Home() {
                   className="text-white"
                 />
               </div>
-              <div className="md:w-[500px] w-[300px] max-h-[10px] bg-gradient-to-r from-[#E86319] to-[#FFE603] rounded-xl mt-2 text-transparent">
-                {" "}
-                p
+              <div className="max-w-[595px] text-white text-md my-2">
+                <p>
+                  A final year student at Gadjah Mada University Majoring in
+                  Information Technology. I am passioned with Software Engineer
+                  particularly in the dynamic realm of Web Development. With a
+                  rich background, I have contributed my skills and creativity to
+                  various freelance web development projects over the past two
+                  years and gained valuable experience through internships at
+                  reputable companies
+                </p>
               </div>
-              <div className="flex w-full h-fit mt-2 justify-start text-white">
+              <div className="flex w-full h-fit mt-2 justify-start items-center text-white">
+                <button className="rounded-[15px] bg-dark-grey text-white px-8 py-4">
+                  <p className="text-lg">Download my CV</p>
+                </button>
                 <Link href="https://www.instagram.com/hasan.chamdany/">
                   <AiFillInstagram className="w-[40px] h-[40px] mx-1" />
                 </Link>
