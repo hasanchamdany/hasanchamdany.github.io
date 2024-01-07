@@ -26,114 +26,116 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <>
-    <DefaultLayout>
-      {/* <Navbar /> */}
-      <section className=" h-screen w-full ">
-        <div className="bg-dark-base  w-full h-screen">
-          {/* <h1>test woe</h1> */}
-          <div className="md:flex flex-row justify-between mx-36 items-center h-screen block">
-            <div className="   flex flex-col gap-2 font-bold ">
-              <div className="text-white">
-                <h2 className="text-5xl">Hello there!, I am</h2>
-              </div>
-              <div
-                className=" md:text-7xl text-3xl justify-start text-gradient-to-r from-[#B822FF] to-[#0D8BFF]"
-                data-aos="fade-right"
-              >
-                <h1
-                  data-aos="fade-right"
-                  className="bg-gradient-to-r from-[#B822FF] to-[#0D8BFF] text-transparent bg-clip-text"
+      <DefaultLayout>
+        {/* <Navbar /> */}
+        <div className="w-full">
+          <div className=" h-screen w-full ">
+            <div className="bg-dark-base  w-full h-screen">
+              {/* <h1>test woe</h1> */}
+              <div className="md:flex flex-row justify-between mx-36 items-center h-screen block">
+                <div className="   flex flex-col gap-2 font-bold ">
+                  <div className="text-white">
+                    <h2 className="text-5xl">Hello there!, I am</h2>
+                  </div>
+                  <div
+                    className=" md:text-7xl text-3xl justify-start text-gradient-to-r from-[#B822FF] to-[#0D8BFF]"
+                    data-aos="fade-right"
+                  >
+                    <h1
+                      data-aos="fade-right"
+                      className="bg-gradient-to-r from-[#B822FF] to-[#0D8BFF] text-transparent bg-clip-text"
+                      style={{
+                        color:
+                          "linear-gradient(99deg, #B822FF 3.09%, #0D8BFF 100%)",
+                      }}
+                    >
+                      Hasan Chamdany
+                    </h1>
+                  </div>
+                  <div className="text-white text-2xl flex items-center gap-6">
+                    <div className="w-[22px] h-[75px] bg-gradient-to-b from-[#E86319] to-[#FFE603] rounded-xl mt-2 text-transparent">
+                      {" "}
+                      p
+                    </div>
+                    <TypeAnimation
+                      // Same String at the start will only be typed once, initially
+                      sequence={[
+                        "Web Developer",
+                        1000,
+                        "UI/UX Designer",
+                        1000,
+                        "IoT Developer",
+                        1000,
+                        "Videographer",
+                        1000,
+                      ]}
+                      speed={50} // Custom Speed from 1-99 - Default Speed: 40
+                      style={{ fontSize: "1.5em" }}
+                      wrapper="span" // Animation will be rendered as a <span>
+                      repeat={Infinity} // Repeat this Animation Sequence infinitely
+                      className="text-white"
+                    />
+                  </div>
+                  <div className="max-w-[595px] text-white text-md my-2">
+                    <p>
+                      A final year student at Gadjah Mada University Majoring in
+                      Information Technology. I am passioned with Software
+                      Engineer particularly in the dynamic realm of Web
+                      Development. With a rich background, I have contributed my
+                      skills and creativity to various freelance web development
+                      projects over the past two years and gained valuable
+                      experience through internships at reputable companies
+                    </p>
+                  </div>
+                  <div className="flex w-full h-fit mt-2 justify-start items-center text-white">
+                    <button className="rounded-[15px] bg-dark-grey text-white px-8 py-4">
+                      <p className="text-lg">Download my CV</p>
+                    </button>
+                    <Link href="https://www.instagram.com/hasan.chamdany/">
+                      <AiFillInstagram className="w-[40px] h-[40px] mx-1" />
+                    </Link>
+                    <Link href="https://github.com/hasanchamdany">
+                      <AiFillGithub className="w-[40px] h-[40px] mx-1" />
+                    </Link>
+                    <Link href="https://wa.me/6281330666660">
+                      <AiOutlineWhatsApp className="w-[40px] h-[40px] mx-1" />
+                    </Link>
+                    <Link href="https://www.linkedin.com/in/muchammad-hasan-chamdany-090a1a196/">
+                      <AiFillLinkedin className="w-[40px] h-[40px] mx-1" />
+                    </Link>
+                    <Link href="mailto:hasanchamdany@gmail.com">
+                      <AiFillMail className="w-[40px] h-[40px] mx-1" />
+                    </Link>
+                  </div>
+                </div>
+                <div
+                  className="flex justify-center items-center"
                   style={{
-                    color:
-                      "linear-gradient(99deg, #B822FF 3.09%, #0D8BFF 100%)",
+                    width: "523px",
+                    height: "514px",
+                    borderRadius: "267px",
+                    background:
+                      "linear-gradient(226deg, #EB8B32 0%, #DCC535 100%)",
+                    boxShadow: "0px 0px 26.2px 12px #E0B835",
                   }}
                 >
-                  Hasan Chamdany
-                </h1>
-              </div>
-              <div className="text-white text-2xl flex items-center gap-6">
-                <div className="w-[22px] h-[75px] bg-gradient-to-b from-[#E86319] to-[#FFE603] rounded-xl mt-2 text-transparent">
-                  {" "}
-                  p
+                  <Image
+                    src={photo}
+                    alt="vector frontend"
+                    width={465}
+                    height={465}
+                    className="circularImage"
+                    style={{
+                      borderRadius: "228px",
+                      boxShadow: "0px 0px 30px 12px #E2AE34 inset",
+                    }}
+                    // layout={"responsive"}
+                  />
                 </div>
-                <TypeAnimation
-                  // Same String at the start will only be typed once, initially
-                  sequence={[
-                    "Web Developer",
-                    1000,
-                    "UI/UX Designer",
-                    1000,
-                    "IoT Developer",
-                    1000,
-                    "Videographer",
-                    1000,
-                  ]}
-                  speed={50} // Custom Speed from 1-99 - Default Speed: 40
-                  style={{ fontSize: "1.5em" }}
-                  wrapper="span" // Animation will be rendered as a <span>
-                  repeat={Infinity} // Repeat this Animation Sequence infinitely
-                  className="text-white"
-                />
               </div>
-              <div className="max-w-[595px] text-white text-md my-2">
-                <p>
-                  A final year student at Gadjah Mada University Majoring in
-                  Information Technology. I am passioned with Software Engineer
-                  particularly in the dynamic realm of Web Development. With a
-                  rich background, I have contributed my skills and creativity to
-                  various freelance web development projects over the past two
-                  years and gained valuable experience through internships at
-                  reputable companies
-                </p>
-              </div>
-              <div className="flex w-full h-fit mt-2 justify-start items-center text-white">
-                <button className="rounded-[15px] bg-dark-grey text-white px-8 py-4">
-                  <p className="text-lg">Download my CV</p>
-                </button>
-                <Link href="https://www.instagram.com/hasan.chamdany/">
-                  <AiFillInstagram className="w-[40px] h-[40px] mx-1" />
-                </Link>
-                <Link href="https://github.com/hasanchamdany">
-                  <AiFillGithub className="w-[40px] h-[40px] mx-1" />
-                </Link>
-                <Link href="https://wa.me/6281330666660">
-                  <AiOutlineWhatsApp className="w-[40px] h-[40px] mx-1" />
-                </Link>
-                <Link href="https://www.linkedin.com/in/muchammad-hasan-chamdany-090a1a196/">
-                  <AiFillLinkedin className="w-[40px] h-[40px] mx-1" />
-                </Link>
-                <Link href="mailto:hasanchamdany@gmail.com">
-                  <AiFillMail className="w-[40px] h-[40px] mx-1" />
-                </Link>
-              </div>
-            </div>
-            <div
-              className="flex justify-center items-center"
-              style={{
-                width: "523px",
-                height: "514px",
-                borderRadius: "267px",
-                background: "linear-gradient(226deg, #EB8B32 0%, #DCC535 100%)",
-                boxShadow: "0px 0px 26.2px 12px #E0B835",
-              }}
-            >
-              <Image
-                src={photo}
-                alt="vector frontend"
-                width={465}
-                height={465}
-                className="circularImage"
-                style={{
-                  borderRadius: "228px",
-                  boxShadow: "0px 0px 30px 12px #E2AE34 inset",
-                }}
-                // layout={"responsive"}
-              />
             </div>
           </div>
-        </div>
-      </section>
-      <section className="sm:block hidden h-screen w-full">
+          {/* <div className="sm:block hidden h-screen w-full">
         <div className="bg-dark-base w-full h-[1080px]">
           <div className="flex">
             <div className="pt-36 pl-8 ">
@@ -149,9 +151,9 @@ export default function Home() {
               <Carousel />
             </div>
           </div>
-          {/* <ProjectCard/> */}
         </div>
-      </section>
+      </div> */}
+        </div>
       </DefaultLayout>
     </>
   );
