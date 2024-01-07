@@ -5,6 +5,7 @@ import Image from "next/image";
 import { Inter } from "@next/font/google";
 import styles from "@/styles/Home.module.css";
 import Navbar from "./../components/Navbar/Navbar.jsx";
+import DefaultLayout from "@/components/DefaultLayout/DefaultLayout.jsx";
 import ProjectCard from "./../components/Card/ProjectCard.jsx";
 import { TypeAnimation } from "react-type-animation";
 import {
@@ -25,7 +26,8 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <>
-      <Navbar />
+    <DefaultLayout>
+      {/* <Navbar /> */}
       <section className=" h-screen w-full ">
         <div className="bg-dark-base  w-full h-screen">
           {/* <h1>test woe</h1> */}
@@ -150,6 +152,7 @@ export default function Home() {
           {/* <ProjectCard/> */}
         </div>
       </section>
+      </DefaultLayout>
     </>
   );
 }
