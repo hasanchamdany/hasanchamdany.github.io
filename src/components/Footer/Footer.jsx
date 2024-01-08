@@ -10,7 +10,8 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className="flex justify-center gap-4 bg-dark-base text-white">
+    <div className="flex flex-col gap-2 bg-dark-base text-white">
+        <div className="flex flex-row justify-center gap-4">
       <Link href="https://www.instagram.com/hasan.chamdany/">
         <AiFillInstagram className="w-[40px] h-[40px] mx-1" />
       </Link>
@@ -26,6 +27,10 @@ const Footer = () => {
       <Link href="mailto:hasanchamdany@gmail.com">
         <AiFillMail className="w-[40px] h-[40px] mx-1" />
       </Link>
+      </div>
+      <div className="flex justify-center">
+      <p className="pb-2">&copy; 2024 Hasan Chamdany. All rights reserved.</p>
+      </div>
     </div>
   );
 };
