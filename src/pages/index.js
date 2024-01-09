@@ -18,8 +18,13 @@ import {
 import Carousel from "./../components/Carousel/Carousel.jsx";
 
 import photo from "./../../public/images/photo.svg";
+import iot from "./../../public/images/iot.png";
+import webDev from "./../../public/images/web-dev.png";
+import video from "./../../public/images/videographer.png";
+import uiux from "./../../public/images/ui-ux.png";
 import dummy from "./../../public/images/dummy.png";
 import HumanVector from "./../../public/images/human-vector.png";
+import RoleCard from "@/components/Card/RoleCard.jsx";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -133,6 +138,23 @@ export default function Home() {
                   />
                 </div>
               </div>
+            </div>
+          </div>
+          <div className="w-full h-screen bg-dark-base">
+            <div className="flex justify-between mx-20 pt-8">
+              {/* Card */}
+              <div className="flex flex-row gap-12">
+                <div className="flex flex-col gap-8">
+                  <RoleCard image={webDev} text="Web Development"/>
+                  <RoleCard image={iot} text="IoT Developer"/>
+                </div>
+                <div className="flex flex-col gap-8 mt-20">
+                  <RoleCard image={uiux} text="UIUX Designer"/>
+                  <RoleCard image={video} text="Videographer"/>
+                </div>
+              </div>
+              {/* Techstack */}
+              <div></div>
             </div>
           </div>
           {/* <div className="sm:block hidden h-screen w-full">
