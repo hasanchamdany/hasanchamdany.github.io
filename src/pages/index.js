@@ -154,7 +154,12 @@ export default function Home() {
                 </div>
               </div>
               {/* Techstack */}
-              <div></div>
+              <div>
+                <div>
+                  <h3 className="text-white text-5xl font-bold">My Skills Set</h3>
+                </div>
+
+              </div>
             </div>
           </div>
           {/* <div className="sm:block hidden h-screen w-full">
