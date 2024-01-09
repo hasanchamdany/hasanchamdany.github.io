@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.role-card {
+    background: linear-gradient(93deg, #252531 0%, #353543 100%);
+}

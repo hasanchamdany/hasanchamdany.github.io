@@ -18,8 +18,34 @@ import {
 import Carousel from "./../components/Carousel/Carousel.jsx";
 
 import photo from "./../../public/images/photo.svg";
+import iot from "./../../public/images/iot.png";
+import webDev from "./../../public/images/web-dev.png";
+import video from "./../../public/images/videographer.png";
+import uiux from "./../../public/images/ui-ux.png";
 import dummy from "./../../public/images/dummy.png";
 import HumanVector from "./../../public/images/human-vector.png";
+import RoleCard from "@/components/Card/RoleCard.jsx";
+
+import logo1 from "./../../public/images/skillset/1.svg";
+import logo2 from "./../../public/images/skillset/2.svg";
+import logo3 from "./../../public/images/skillset/3.svg";
+import logo4 from "./../../public/images/skillset/4.svg";
+import logo5 from "./../../public/images/skillset/5.svg";
+import logo6 from "./../../public/images/skillset/6.svg";
+import logo7 from "./../../public/images/skillset/7.svg";
+import logo8 from "./../../public/images/skillset/8.svg";
+import logo9 from "./../../public/images/skillset/9.svg";
+import logo10 from "./../../public/images/skillset/10.svg";
+import logo11 from "./../../public/images/skillset/11.svg";
+import logo12 from "./../../public/images/skillset/12.svg";
+import logo13 from "./../../public/images/skillset/13.svg";
+import logo14 from "./../../public/images/skillset/14.svg";
+import logo15 from "./../../public/images/skillset/15.svg";
+import logo16 from "./../../public/images/skillset/16.svg";
+import logo17 from "./../../public/images/skillset/17.svg";
+import logo18 from "./../../public/images/skillset/18.svg";
+import logo19 from "./../../public/images/skillset/19.svg";
+import logo20 from "./../../public/images/skillset/20.svg";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -130,6 +156,151 @@ export default function Home() {
                       boxShadow: "0px 0px 30px 12px #E2AE34 inset",
                     }}
                     // layout={"responsive"}
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="w-full h-screen bg-dark-base">
+            <div className="flex justify-between mx-20 pt-8">
+              {/* Card */}
+              <div className="flex flex-row gap-12">
+                <div className="flex flex-col gap-8">
+                  <RoleCard image={webDev} text="Web Development" />
+                  <RoleCard image={iot} text="IoT Developer" />
+                </div>
+                <div className="flex flex-col gap-8 mt-20">
+                  <RoleCard image={uiux} text="UIUX Designer" />
+                  <RoleCard image={video} text="Videographer" />
+                </div>
+              </div>
+              {/* Techstack */}
+              <div>
+                <div>
+                  <h3 className="text-white text-5xl font-bold">
+                    My Skills Set
+                  </h3>
+                </div>
+                <div className="flex flex-wrap justify-end max-w-[645px] pt-10">
+                  <Image
+                    src={logo1}
+                    width={80}
+                    height={80}
+                    className="mx-4 my-2"
+                  />
+                  <Image
+                    src={logo2}
+                    width={80}
+                    height={80}
+                    className="mx-4 my-2"
+                  />
+                  <Image
+                    src={logo3}
+                    width={80}
+                    height={80}
+                    className="mx-4 my-2"
+                  />
+                  <Image
+                    src={logo4}
+                    width={111}
+                    height={80}
+                    className="mx-4 my-2"
+                  />
+                  <Image
+                    src={logo5}
+                    width={80}
+                    height={80}
+                    className="mx-4 my-2"
+                  />
+                  <Image
+                    src={logo6}
+                    width={80}
+                    height={80}
+                    className="mx-4 my-2"
+                  />
+                  <Image
+                    src={logo7}
+                    width={80}
+                    height={80}
+                    className="mx-4 my-2"
+                  />
+                  <Image
+                    src={logo8}
+                    width={131}
+                    height={80}
+                    className="mx-4 my-2"
+                  />
+                  <Image
+                    src={logo9}
+                    width={80}
+                    height={80}
+                    className="mx-4 my-2"
+                  />
+                  <Image
+                    src={logo10}
+                    width={80}
+                    height={80}
+                    className="mx-4 my-2"
+                  />
+                  <Image
+                    src={logo11}
+                    width={80}
+                    height={80}
+                    className="mx-4 my-2"
+                  />
+                  <Image
+                    src={logo12}
+                    width={171}
+                    height={80}
+                    className="mx-4 my-2"
+                  />
+                  <Image
+                    src={logo13}
+                    width={80}
+                    height={80}
+                    className="mx-4 my-2"
+                  />
+                  <Image
+                    src={logo14}
+                    width={80}
+                    height={80}
+                    className="mx-4 my-2"
+                  />
+                  <Image
+                    src={logo15}
+                    width={80}
+                    height={80}
+                    className="mx-4 my-2"
+                  />
+                  <Image
+                    src={logo16}
+                    width={80}
+                    height={80}
+                    className="mx-4 my-2"
+                  />
+                  <Image
+                    src={logo17}
+                    width={293}
+                    height={80}
+                    className="mx-4 my-2"
+                  />
+                  <Image
+                    src={logo18}
+                    width={80}
+                    height={80}
+                    className="mx-4 my-2"
+                  />
+                  <Image
+                    src={logo19}
+                    width={80}
+                    height={80}
+                    className="mx-4 my-2"
+                  />
+                  <Image
+                    src={logo20}
+                    width={80}
+                    height={80}
+                    className="mx-4 my-2"
                   />
                 </div>
               </div>
