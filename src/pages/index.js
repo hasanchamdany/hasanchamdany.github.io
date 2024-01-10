@@ -6,6 +6,7 @@ import { Inter } from "@next/font/google";
 import styles from "@/styles/Home.module.css";
 import Navbar from "./../components/Navbar/Navbar.jsx";
 import DefaultLayout from "@/components/DefaultLayout/DefaultLayout.jsx";
+import TextSpan from "@/components/TextAnimaation/TextSpan.js";
 import ProjectCard from "./../components/Card/ProjectCard.jsx";
 import { TypeAnimation } from "react-type-animation";
 import {
@@ -49,7 +50,9 @@ import logo20 from "./../../public/images/skillset/20.svg";
 
 const inter = Inter({ subsets: ["latin"] });
 
+
 export default function Home() {
+  const animationText = "Hasan Chamdany".split("");
   return (
     <>
       <DefaultLayout>
@@ -60,22 +63,28 @@ export default function Home() {
               {/* <h1>test woe</h1> */}
               <div className="md:flex flex-row justify-between mx-36 items-center h-screen block">
                 <div className="   flex flex-col gap-2 font-bold ">
-                  <div className="text-white">
+                  <div className=" bg-gradient-to-r from-[#B822FF] to-[#0D8BFF] text-transparent bg-clip-text">
                     <h2 className="text-5xl">Hello there!, I am</h2>
                   </div>
                   <div
-                    className=" md:text-7xl text-3xl justify-start text-gradient-to-r from-[#B822FF] to-[#0D8BFF]"
+                    className=" md:text-7xl text-3xl justify-start "
                     data-aos="fade-right"
                   >
                     <h1
                       data-aos="fade-right"
-                      className="bg-gradient-to-r from-[#B822FF] to-[#0D8BFF] text-transparent bg-clip-text"
+                      className="text-white "
                       style={{
                         color:
                           "linear-gradient(99deg, #B822FF 3.09%, #0D8BFF 100%)",
                       }}
                     >
-                      Hasan Chamdany
+                        {animationText.map((text, index) => {
+                          return (
+                            <TextSpan key={index}>
+                              {text === " " ? "\u00A0" : text}
+                            </TextSpan>
+                          );
+                        })}
                     </h1>
                   </div>
                   <div className="text-white text-2xl flex items-center gap-6">
