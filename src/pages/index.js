@@ -209,7 +209,7 @@ export default function Home() {
               </div>
               {/* Techstack */}
               <div>
-                <div>
+                <div data-aos="fade-left">
                   <h3 className="text-white text-5xl font-bold">
                     My Skills Set
                   </h3>

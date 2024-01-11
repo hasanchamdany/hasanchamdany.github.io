@@ -91,14 +91,14 @@ const Navbar = () => {
                   <ul className="items-center text-center justify-center space-y-10 md:flex md:space-x-12 md:space-y-0">
                     <li className="text-n-blue">
                       <Link href="/">
-                        <div className="font-poppins font-semibold text-white hover:text-blue-light transition duration-300 ease-in-out">
+                        <div className="font-poppins font-semibold text-white hover:text-[#E2AE34] transition duration-300 ease-in-out">
                           Home
                         </div>
                       </Link>
                     </li>
                     <li className="text-n-blue">
                       <Link href="/projects">
-                        <div className="font-poppins font-semibold text-white hover:text-blue-light transition duration-300 ease-in-out">
+                        <div className="font-poppins font-semibold text-white hover:text-[#E2AE34] transition duration-300 ease-in-out">
                           Projects
                         </div>
                       </Link>
