@@ -63,15 +63,14 @@ export default function Home() {
               {/* <h1>test woe</h1> */}
               <div className="md:flex flex-row justify-between mx-36 items-center h-screen block">
                 <div className="   flex flex-col gap-2 font-bold ">
-                  <div className=" bg-gradient-to-r from-[#B822FF] to-[#0D8BFF] text-transparent bg-clip-text">
-                    <h2 className="text-5xl">Hello there!, I am</h2>
+                  <div className=" bg-gradient-to-r from-[#B822FF] to-[#0D8BFF] text-transparent bg-clip-text" data-aos="fade-up">
+                    <h2 className="text-5xl" >Hello there!, I am</h2>
                   </div>
                   <div
                     className=" md:text-7xl text-3xl justify-start "
-                    data-aos="fade-right"
+                    data-aos="fade-up"
                   >
                     <h1
-                      data-aos="fade-right"
                       className="text-white "
                       style={{
                         color:
@@ -87,7 +86,7 @@ export default function Home() {
                         })}
                     </h1>
                   </div>
-                  <div className="text-white text-2xl flex items-center gap-6">
+                  <div className="text-white text-2xl flex items-center gap-6" data-aos="fade-up">
                     <div className="w-[22px] h-[75px] bg-gradient-to-b from-[#E86319] to-[#FFE603] rounded-xl mt-2 text-transparent">
                       {" "}
                       p
@@ -111,7 +110,7 @@ export default function Home() {
                       className="text-white"
                     />
                   </div>
-                  <div className="max-w-[595px] text-white text-md my-2">
+                  <div className="max-w-[595px] text-white text-md my-2" data-aos="fade-up">
                     <p>
                       A final year student at Gadjah Mada University Majoring in
                       Information Technology. I am passioned with Software
@@ -123,27 +122,28 @@ export default function Home() {
                     </p>
                   </div>
                   <div className="flex w-full h-fit mt-2 justify-start items-center text-white">
-                    <button className="rounded-[15px] bg-dark-grey text-white px-8 py-4">
+                    <button className="rounded-[15px] bg-dark-grey text-white px-8 py-4" data-aos="fade-up">
                       <p className="text-lg">Download my CV</p>
                     </button>
-                    <Link href="https://www.instagram.com/hasan.chamdany/">
+                    <Link href="https://www.instagram.com/hasan.chamdany/" data-aos="fade-up">
                       <AiFillInstagram className="w-[40px] h-[40px] mx-1" />
                     </Link>
-                    <Link href="https://github.com/hasanchamdany">
+                    <Link href="https://github.com/hasanchamdany" data-aos="fade-up">
                       <AiFillGithub className="w-[40px] h-[40px] mx-1" />
                     </Link>
-                    <Link href="https://wa.me/6281330666660">
+                    <Link href="https://wa.me/6281330666660" data-aos="fade-up">
                       <AiOutlineWhatsApp className="w-[40px] h-[40px] mx-1" />
                     </Link>
-                    <Link href="https://www.linkedin.com/in/muchammad-hasan-chamdany-090a1a196/">
+                    <Link href="https://www.linkedin.com/in/muchammad-hasan-chamdany-090a1a196/" data-aos="fade-up">
                       <AiFillLinkedin className="w-[40px] h-[40px] mx-1" />
                     </Link>
-                    <Link href="mailto:hasanchamdany@gmail.com">
+                    <Link href="mailto:hasanchamdany@gmail.com" data-aos="fade-up">
                       <AiFillMail className="w-[40px] h-[40px] mx-1" />
                     </Link>
                   </div>
                 </div>
                 <div
+                data-aos="fade-up"
                   className="flex justify-center items-center"
                   style={{
                     width: "523px",
@@ -192,120 +192,140 @@ export default function Home() {
                 </div>
                 <div className="flex flex-wrap justify-end max-w-[645px] pt-10">
                   <Image
+                  data-aos="fade-up"
                     src={logo1}
                     width={80}
                     height={80}
                     className="mx-4 my-2"
                   />
                   <Image
+                  data-aos="fade-up"
                     src={logo2}
                     width={80}
                     height={80}
                     className="mx-4 my-2"
                   />
                   <Image
+                  data-aos="fade-up"
                     src={logo3}
                     width={80}
                     height={80}
                     className="mx-4 my-2"
                   />
                   <Image
+                  data-aos="fade-up"
                     src={logo4}
                     width={111}
                     height={80}
                     className="mx-4 my-2"
                   />
                   <Image
+                  data-aos="fade-up"
                     src={logo5}
                     width={80}
                     height={80}
                     className="mx-4 my-2"
                   />
                   <Image
+                  data-aos="fade-up"
                     src={logo6}
                     width={80}
                     height={80}
                     className="mx-4 my-2"
                   />
                   <Image
+                  data-aos="fade-up"
                     src={logo7}
                     width={80}
                     height={80}
                     className="mx-4 my-2"
                   />
                   <Image
+                  data-aos="fade-up"
                     src={logo8}
                     width={131}
                     height={80}
                     className="mx-4 my-2"
                   />
                   <Image
+                  data-aos="fade-up"
                     src={logo9}
                     width={80}
                     height={80}
                     className="mx-4 my-2"
                   />
                   <Image
+                  data-aos="fade-up"
                     src={logo10}
                     width={80}
                     height={80}
                     className="mx-4 my-2"
                   />
                   <Image
+                  data-aos="fade-up"
                     src={logo11}
                     width={80}
                     height={80}
                     className="mx-4 my-2"
                   />
                   <Image
+                  data-aos="fade-up"
                     src={logo12}
                     width={171}
                     height={80}
                     className="mx-4 my-2"
                   />
                   <Image
+                  data-aos="fade-up"
                     src={logo13}
                     width={80}
                     height={80}
                     className="mx-4 my-2"
                   />
                   <Image
+                  data-aos="fade-up"
                     src={logo14}
                     width={80}
                     height={80}
                     className="mx-4 my-2"
                   />
                   <Image
+                  data-aos="fade-up"
                     src={logo15}
                     width={80}
                     height={80}
                     className="mx-4 my-2"
                   />
                   <Image
+                  data-aos="fade-up"
                     src={logo16}
                     width={80}
                     height={80}
                     className="mx-4 my-2"
                   />
                   <Image
+                  data-aos="fade-up"
                     src={logo17}
                     width={293}
                     height={80}
                     className="mx-4 my-2"
                   />
                   <Image
+                  data-aos="fade-up"
                     src={logo18}
                     width={80}
                     height={80}
                     className="mx-4 my-2"
                   />
                   <Image
+                  data-aos="fade-up"
                     src={logo19}
                     width={80}
                     height={80}
                     className="mx-4 my-2"
                   />
                   <Image
+                  data-aos="fade-up"
                     src={logo20}
                     width={80}
                     height={80}
