@@ -9,6 +9,7 @@ import DefaultLayout from "@/components/DefaultLayout/DefaultLayout.jsx";
 import TextSpan from "@/components/TextAnimaation/TextSpan.js";
 import ProjectCard from "./../components/Card/ProjectCard.jsx";
 import { TypeAnimation } from "react-type-animation";
+import { motion } from "framer-motion";
 import {
   AiFillInstagram,
   AiFillGithub,
@@ -50,7 +51,6 @@ import logo20 from "./../../public/images/skillset/20.svg";
 
 const inter = Inter({ subsets: ["latin"] });
 
-
 export default function Home() {
   const animationText = "Hasan Chamdany".split("");
   return (
@@ -63,8 +63,11 @@ export default function Home() {
               {/* <h1>test woe</h1> */}
               <div className="md:flex flex-row justify-between mx-36 items-center h-screen block">
                 <div className="   flex flex-col gap-2 font-bold ">
-                  <div className=" bg-gradient-to-r from-[#B822FF] to-[#0D8BFF] text-transparent bg-clip-text" data-aos="fade-up">
-                    <h2 className="text-5xl" >Hello there!, I am</h2>
+                  <div
+                    className=" bg-gradient-to-r from-[#B822FF] to-[#0D8BFF] text-transparent bg-clip-text"
+                    data-aos="fade-up"
+                  >
+                    <h2 className="text-5xl">Hello there!, I am</h2>
                   </div>
                   <div
                     className=" md:text-7xl text-3xl justify-start "
@@ -77,16 +80,19 @@ export default function Home() {
                           "linear-gradient(99deg, #B822FF 3.09%, #0D8BFF 100%)",
                       }}
                     >
-                        {animationText.map((text, index) => {
-                          return (
-                            <TextSpan key={index}>
-                              {text === " " ? "\u00A0" : text}
-                            </TextSpan>
-                          );
-                        })}
+                      {animationText.map((text, index) => {
+                        return (
+                          <TextSpan key={index}>
+                            {text === " " ? "\u00A0" : text}
+                          </TextSpan>
+                        );
+                      })}
                     </h1>
                   </div>
-                  <div className="text-white text-2xl flex items-center gap-6" data-aos="fade-up">
+                  <div
+                    className="text-white text-2xl flex items-center gap-6"
+                    data-aos="fade-up"
+                  >
                     <div className="w-[22px] h-[75px] bg-gradient-to-b from-[#E86319] to-[#FFE603] rounded-xl mt-2 text-transparent">
                       {" "}
                       p
@@ -110,7 +116,10 @@ export default function Home() {
                       className="text-white"
                     />
                   </div>
-                  <div className="max-w-[595px] text-white text-md my-2" data-aos="fade-up">
+                  <div
+                    className="max-w-[595px] text-white text-md my-2"
+                    data-aos="fade-up"
+                  >
                     <p>
                       A final year student at Gadjah Mada University Majoring in
                       Information Technology. I am passioned with Software
@@ -122,28 +131,43 @@ export default function Home() {
                     </p>
                   </div>
                   <div className="flex w-full h-fit mt-2 justify-start items-center text-white">
-                    <button className="rounded-[15px] bg-dark-grey text-white px-8 py-4" data-aos="fade-up">
+                    <button
+                      className="rounded-[15px] bg-dark-grey text-white px-8 py-4"
+                      data-aos="fade-up"
+                    >
                       <p className="text-lg">Download my CV</p>
                     </button>
-                    <Link href="https://www.instagram.com/hasan.chamdany/" data-aos="fade-up">
+                    <Link
+                      href="https://www.instagram.com/hasan.chamdany/"
+                      data-aos="fade-up"
+                    >
                       <AiFillInstagram className="w-[40px] h-[40px] mx-1" />
                     </Link>
-                    <Link href="https://github.com/hasanchamdany" data-aos="fade-up">
+                    <Link
+                      href="https://github.com/hasanchamdany"
+                      data-aos="fade-up"
+                    >
                       <AiFillGithub className="w-[40px] h-[40px] mx-1" />
                     </Link>
                     <Link href="https://wa.me/6281330666660" data-aos="fade-up">
                       <AiOutlineWhatsApp className="w-[40px] h-[40px] mx-1" />
                     </Link>
-                    <Link href="https://www.linkedin.com/in/muchammad-hasan-chamdany-090a1a196/" data-aos="fade-up">
+                    <Link
+                      href="https://www.linkedin.com/in/muchammad-hasan-chamdany-090a1a196/"
+                      data-aos="fade-up"
+                    >
                       <AiFillLinkedin className="w-[40px] h-[40px] mx-1" />
                     </Link>
-                    <Link href="mailto:hasanchamdany@gmail.com" data-aos="fade-up">
+                    <Link
+                      href="mailto:hasanchamdany@gmail.com"
+                      data-aos="fade-up"
+                    >
                       <AiFillMail className="w-[40px] h-[40px] mx-1" />
                     </Link>
                   </div>
                 </div>
                 <div
-                data-aos="fade-up"
+                  data-aos="fade-up"
                   className="flex justify-center items-center"
                   style={{
                     width: "523px",
@@ -185,152 +209,412 @@ export default function Home() {
               </div>
               {/* Techstack */}
               <div>
-                <div>
+                <div data-aos="fade-left">
                   <h3 className="text-white text-5xl font-bold">
                     My Skills Set
                   </h3>
                 </div>
                 <div className="flex flex-wrap justify-end max-w-[645px] pt-10">
-                  <Image
-                  data-aos="fade-up"
-                    src={logo1}
-                    width={80}
-                    height={80}
-                    className="mx-4 my-2"
-                  />
-                  <Image
-                  data-aos="fade-up"
-                    src={logo2}
-                    width={80}
-                    height={80}
-                    className="mx-4 my-2"
-                  />
-                  <Image
-                  data-aos="fade-up"
-                    src={logo3}
-                    width={80}
-                    height={80}
-                    className="mx-4 my-2"
-                  />
-                  <Image
-                  data-aos="fade-up"
-                    src={logo4}
-                    width={111}
-                    height={80}
-                    className="mx-4 my-2"
-                  />
-                  <Image
-                  data-aos="fade-up"
-                    src={logo5}
-                    width={80}
-                    height={80}
-                    className="mx-4 my-2"
-                  />
-                  <Image
-                  data-aos="fade-up"
-                    src={logo6}
-                    width={80}
-                    height={80}
-                    className="mx-4 my-2"
-                  />
-                  <Image
-                  data-aos="fade-up"
-                    src={logo7}
-                    width={80}
-                    height={80}
-                    className="mx-4 my-2"
-                  />
-                  <Image
-                  data-aos="fade-up"
-                    src={logo8}
-                    width={131}
-                    height={80}
-                    className="mx-4 my-2"
-                  />
-                  <Image
-                  data-aos="fade-up"
-                    src={logo9}
-                    width={80}
-                    height={80}
-                    className="mx-4 my-2"
-                  />
-                  <Image
-                  data-aos="fade-up"
-                    src={logo10}
-                    width={80}
-                    height={80}
-                    className="mx-4 my-2"
-                  />
-                  <Image
-                  data-aos="fade-up"
-                    src={logo11}
-                    width={80}
-                    height={80}
-                    className="mx-4 my-2"
-                  />
-                  <Image
-                  data-aos="fade-up"
-                    src={logo12}
-                    width={171}
-                    height={80}
-                    className="mx-4 my-2"
-                  />
-                  <Image
-                  data-aos="fade-up"
-                    src={logo13}
-                    width={80}
-                    height={80}
-                    className="mx-4 my-2"
-                  />
-                  <Image
-                  data-aos="fade-up"
-                    src={logo14}
-                    width={80}
-                    height={80}
-                    className="mx-4 my-2"
-                  />
-                  <Image
-                  data-aos="fade-up"
-                    src={logo15}
-                    width={80}
-                    height={80}
-                    className="mx-4 my-2"
-                  />
-                  <Image
-                  data-aos="fade-up"
-                    src={logo16}
-                    width={80}
-                    height={80}
-                    className="mx-4 my-2"
-                  />
-                  <Image
-                  data-aos="fade-up"
-                    src={logo17}
-                    width={293}
-                    height={80}
-                    className="mx-4 my-2"
-                  />
-                  <Image
-                  data-aos="fade-up"
-                    src={logo18}
-                    width={80}
-                    height={80}
-                    className="mx-4 my-2"
-                  />
-                  <Image
-                  data-aos="fade-up"
-                    src={logo19}
-                    width={80}
-                    height={80}
-                    className="mx-4 my-2"
-                  />
-                  <Image
-                  data-aos="fade-up"
-                    src={logo20}
-                    width={80}
-                    height={80}
-                    className="mx-4 my-2"
-                  />
+                  <motion.div
+                    data-aos="fade-up"
+                    whileHover={{ scale: 1.2 }}
+                    className="mx-4 my-2 relative overflow-hidden"
+                  >
+                    <Image
+                      src={logo1}
+                      alt="Your Logo Alt Text"
+                      width={80}
+                      height={80}
+                      layout="responsive"
+                      className="transition-transform transform"
+                    />
+                    <motion.div
+                      whileHover={{
+                        boxShadow: "0 0 8px rgba(255, 255, 255, 1)",
+                      }}
+                      className="absolute top-0 left-0 right-0 bottom-0"
+                    />
+                  </motion.div>
+                  <motion.div
+                    data-aos="fade-up"
+                    whileHover={{ scale: 1.2 }}
+                    className="mx-4 my-2 relative overflow-hidden"
+                  >
+                    <Image
+                      src={logo2}
+                      alt="Your Logo Alt Text"
+                      width={80}
+                      height={80}
+                      layout="responsive"
+                      className="transition-transform transform"
+                    />
+                    <motion.div
+                      whileHover={{
+                        boxShadow: "0 0 8px rgba(255, 255, 255, 1)",
+                      }}
+                      className="absolute top-0 left-0 right-0 bottom-0"
+                    />
+                  </motion.div>
+                  <motion.div
+                    data-aos="fade-up"
+                    whileHover={{ scale: 1.2 }}
+                    className="mx-4 my-2 relative overflow-hidden"
+                  >
+                    <Image
+                      src={logo3}
+                      alt="Your Logo Alt Text"
+                      width={80}
+                      height={80}
+                      layout="responsive"
+                      className="transition-transform transform"
+                    />
+                    <motion.div
+                      whileHover={{
+                        boxShadow: "0 0 8px rgba(255, 255, 255, 1)",
+                      }}
+                      className="absolute top-0 left-0 right-0 bottom-0"
+                    />
+                  </motion.div>
+                  <motion.div
+                    data-aos="fade-up"
+                    whileHover={{ scale: 1.2 }}
+                    className="mx-4 my-2 relative overflow-hidden"
+                  >
+                    <Image
+                      src={logo4}
+                      alt="Your Logo Alt Text"
+                      width={111}
+                      height={80}
+                      layout="responsive"
+                      className="transition-transform transform"
+                    />
+                    <motion.div
+                      whileHover={{
+                        boxShadow: "0 0 8px rgba(255, 255, 255, 1)",
+                      }}
+                      className="absolute top-0 left-0 right-0 bottom-0"
+                    />
+                  </motion.div>
+                  <motion.div
+                    data-aos="fade-up"
+                    whileHover={{ scale: 1.2 }}
+                    className="mx-4 my-2 relative overflow-hidden"
+                  >
+                    <Image
+                      src={logo5}
+                      alt="Your Logo Alt Text"
+                      width={80}
+                      height={80}
+                      layout="responsive"
+                      className="transition-transform transform"
+                    />
+                    <motion.div
+                      whileHover={{
+                        boxShadow: "0 0 8px rgba(255, 255, 255, 1)",
+                      }}
+                      className="absolute top-0 left-0 right-0 bottom-0"
+                    />
+                  </motion.div>
+                  <motion.div
+                    data-aos="fade-up"
+                    whileHover={{ scale: 1.2 }}
+                    className="mx-4 my-2 relative overflow-hidden"
+                  >
+                    <Image
+                      src={logo6}
+                      alt="Your Logo Alt Text"
+                      width={80}
+                      height={80}
+                      layout="responsive"
+                      className="transition-transform transform"
+                    />
+                    <motion.div
+                      whileHover={{
+                        boxShadow: "0 0 8px rgba(255, 255, 255, 1)",
+                      }}
+                      className="absolute top-0 left-0 right-0 bottom-0"
+                    />
+                  </motion.div>
+                  <motion.div
+                    data-aos="fade-up"
+                    whileHover={{ scale: 1.2 }}
+                    className="mx-4 my-2 relative overflow-hidden"
+                  >
+                    <Image
+                      src={logo7}
+                      alt="Your Logo Alt Text"
+                      width={80}
+                      height={80}
+                      layout="responsive"
+                      className="transition-transform transform"
+                    />
+                    <motion.div
+                      whileHover={{
+                        boxShadow: "0 0 8px rgba(255, 255, 255, 1)",
+                      }}
+                      className="absolute top-0 left-0 right-0 bottom-0"
+                    />
+                  </motion.div>
+                  <motion.div
+                    data-aos="fade-up"
+                    whileHover={{ scale: 1.2 }}
+                    className="mx-4 my-2 relative overflow-hidden"
+                  >
+                    <Image
+                      src={logo8}
+                      alt="Your Logo Alt Text"
+                      width={131}
+                      height={80}
+                      layout="responsive"
+                      className="transition-transform transform"
+                    />
+                    <motion.div
+                      whileHover={{
+                        boxShadow: "0 0 8px rgba(255, 255, 255, 1)",
+                      }}
+                      className="absolute top-0 left-0 right-0 bottom-0"
+                    />
+                  </motion.div>
+                  <motion.div
+                    data-aos="fade-up"
+                    whileHover={{ scale: 1.2 }}
+                    className="mx-4 my-2 relative overflow-hidden"
+                  >
+                    <Image
+                      src={logo9}
+                      alt="Your Logo Alt Text"
+                      width={80}
+                      height={80}
+                      layout="responsive"
+                      className="transition-transform transform"
+                    />
+                    <motion.div
+                      whileHover={{
+                        boxShadow: "0 0 8px rgba(255, 255, 255, 1)",
+                      }}
+                      className="absolute top-0 left-0 right-0 bottom-0"
+                    />
+                  </motion.div>
+                  <motion.div
+                    data-aos="fade-up"
+                    whileHover={{ scale: 1.2 }}
+                    className="mx-4 my-2 relative overflow-hidden"
+                  >
+                    <Image
+                      src={logo10}
+                      alt="Your Logo Alt Text"
+                      width={80}
+                      height={80}
+                      layout="responsive"
+                      className="transition-transform transform"
+                    />
+                    <motion.div
+                      whileHover={{
+                        boxShadow: "0 0 8px rgba(255, 255, 255, 1)",
+                      }}
+                      className="absolute top-0 left-0 right-0 bottom-0"
+                    />
+                  </motion.div>
+                  <motion.div
+                    data-aos="fade-up"
+                    whileHover={{ scale: 1.2 }}
+                    className="mx-4 my-2 relative overflow-hidden"
+                  >
+                    <Image
+                      src={logo11}
+                      alt="Your Logo Alt Text"
+                      width={80}
+                      height={80}
+                      layout="responsive"
+                      className="transition-transform transform"
+                    />
+                    <motion.div
+                      whileHover={{
+                        boxShadow: "0 0 8px rgba(255, 255, 255, 1)",
+                      }}
+                      className="absolute top-0 left-0 right-0 bottom-0"
+                    />
+                  </motion.div>
+                  <motion.div
+                    data-aos="fade-up"
+                    whileHover={{ scale: 1.2 }}
+                    className="mx-4 my-2 relative overflow-hidden"
+                  >
+                    <Image
+                      src={logo12}
+                      alt="Your Logo Alt Text"
+                      width={171}
+                      height={80}
+                      layout="responsive"
+                      className="transition-transform transform"
+                    />
+                    <motion.div
+                      whileHover={{
+                        boxShadow: "0 0 8px rgba(255, 255, 255, 1)",
+                      }}
+                      className="absolute top-0 left-0 right-0 bottom-0"
+                    />
+                  </motion.div>
+                  <motion.div
+                    data-aos="fade-up"
+                    whileHover={{ scale: 1.2 }}
+                    className="mx-4 my-2 relative overflow-hidden"
+                  >
+                    <Image
+                      src={logo13}
+                      alt="Your Logo Alt Text"
+                      width={80}
+                      height={80}
+                      layout="responsive"
+                      className="transition-transform transform"
+                    />
+                    <motion.div
+                      whileHover={{
+                        boxShadow: "0 0 8px rgba(255, 255, 255, 1)",
+                      }}
+                      className="absolute top-0 left-0 right-0 bottom-0"
+                    />
+                  </motion.div>
+                  <motion.div
+                    data-aos="fade-up"
+                    whileHover={{ scale: 1.2 }}
+                    className="mx-4 my-2 relative overflow-hidden"
+                  >
+                    <Image
+                      src={logo14}
+                      alt="Your Logo Alt Text"
+                      width={80}
+                      height={80}
+                      layout="responsive"
+                      className="transition-transform transform"
+                    />
+                    <motion.div
+                      whileHover={{
+                        boxShadow: "0 0 8px rgba(255, 255, 255, 1)",
+                      }}
+                      className="absolute top-0 left-0 right-0 bottom-0"
+                    />
+                  </motion.div>
+                  <motion.div
+                    data-aos="fade-up"
+                    whileHover={{ scale: 1.2 }}
+                    className="mx-4 my-2 relative overflow-hidden"
+                  >
+                    <Image
+                      src={logo15}
+                      alt="Your Logo Alt Text"
+                      width={80}
+                      height={80}
+                      layout="responsive"
+                      className="transition-transform transform"
+                    />
+                    <motion.div
+                      whileHover={{
+                        boxShadow: "0 0 8px rgba(255, 255, 255, 1)",
+                      }}
+                      className="absolute top-0 left-0 right-0 bottom-0"
+                    />
+                  </motion.div>
+                  <motion.div
+                    data-aos="fade-up"
+                    whileHover={{ scale: 1.2 }}
+                    className="mx-4 my-2 relative overflow-hidden"
+                  >
+                    <Image
+                      src={logo16}
+                      alt="Your Logo Alt Text"
+                      width={80}
+                      height={80}
+                      layout="responsive"
+                      className="transition-transform transform"
+                    />
+                    <motion.div
+                      whileHover={{
+                        boxShadow: "0 0 8px rgba(255, 255, 255, 1)",
+                      }}
+                      className="absolute top-0 left-0 right-0 bottom-0"
+                    />
+                  </motion.div>
+                  <motion.div
+                    data-aos="fade-up"
+                    whileHover={{ scale: 1.2 }}
+                    className="mx-4 my-2 relative overflow-hidden"
+                  >
+                    <Image
+                      src={logo17}
+                      alt="Your Logo Alt Text"
+                      width={293}
+                      height={80}
+                      layout="responsive"
+                      className="transition-transform transform"
+                    />
+                    <motion.div
+                      whileHover={{
+                        boxShadow: "0 0 8px rgba(255, 255, 255, 1)",
+                      }}
+                      className="absolute top-0 left-0 right-0 bottom-0"
+                    />
+                  </motion.div>
+                  <motion.div
+                    data-aos="fade-up"
+                    whileHover={{ scale: 1.2 }}
+                    className="mx-4 my-2 relative overflow-hidden"
+                  >
+                    <Image
+                      src={logo18}
+                      alt="Your Logo Alt Text"
+                      width={80}
+                      height={80}
+                      layout="responsive"
+                      className="transition-transform transform"
+                    />
+                    <motion.div
+                      whileHover={{
+                        boxShadow: "0 0 8px rgba(255, 255, 255, 1)",
+                      }}
+                      className="absolute top-0 left-0 right-0 bottom-0"
+                    />
+                  </motion.div>
+                  <motion.div
+                    data-aos="fade-up"
+                    whileHover={{ scale: 1.2 }}
+                    className="mx-4 my-2 relative overflow-hidden"
+                  >
+                    <Image
+                      src={logo19}
+                      alt="Your Logo Alt Text"
+                      width={80}
+                      height={80}
+                      layout="responsive"
+                      className="transition-transform transform"
+                    />
+                    <motion.div
+                      whileHover={{
+                        boxShadow: "0 0 8px rgba(255, 255, 255, 1)",
+                      }}
+                      className="absolute top-0 left-0 right-0 bottom-0"
+                    />
+                  </motion.div>
+                  <motion.div
+                    data-aos="fade-up"
+                    whileHover={{ scale: 1.2 }}
+                    className="mx-4 my-2 relative overflow-hidden"
+                  >
+                    <Image
+                      src={logo20}
+                      alt="Your Logo Alt Text"
+                      width={80}
+                      height={80}
+                      layout="responsive"
+                      className="transition-transform transform"
+                    />
+                    <motion.div
+                      whileHover={{
+                        boxShadow: "0 0 8px rgba(255, 255, 255, 1)",
+                      }}
+                      className="absolute top-0 left-0 right-0 bottom-0"
+                    />
+                  </motion.div>
                 </div>
               </div>
             </div>

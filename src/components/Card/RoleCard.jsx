@@ -1,9 +1,9 @@
 import React from "react";
 import Image from "next/image";
 
-const RoleCard = ({image, text}) => {
+const RoleCard = ({ image, text }) => {
   return (
-    <div className="rounded-[30px] role-card" >
+    <div className="rounded-[30px] role-card   focus:scale-105 focus:outline-none shadow-lg shadow-black hover:shadow-[#DCC535] transition-shadow">
       <div className="p-14" data-aos="fade-up">
         <Image src={image} width={200} />
       </div>
