@@ -60,138 +60,141 @@ export default function Home() {
         {/* <Navbar /> */}
         <div className="w-full h-fit">
           <div className="block bg-dark-base  w-full min-h-screen">
-              {/* <h1>test woe</h1> */}
-              <div className="flex lg:flex-row flex-col lg:gap-0 gap-12 lg:justify-between justify-center mx-10 lg:mx-36 pt-20 lg:pt-10 items-center min-h-screen">
-                <div className="   flex flex-col gap-2 font-bold ">
-                  <div
-                    className=" bg-gradient-to-r from-[#B822FF] to-[#0D8BFF] text-transparent bg-clip-text"
-                    data-aos="fade-up"
-                  >
-                    <h2 className="text-5xl">Hello there!, I am</h2>
-                  </div>
-                  <div
-                    className=" md:text-7xl text-3xl justify-start "
-                    data-aos="fade-up"
-                  >
-                    <h1
-                      className="text-white "
-                      style={{
-                        color:
-                          "linear-gradient(99deg, #B822FF 3.09%, #0D8BFF 100%)",
-                      }}
-                    >
-                      {animationText.map((text, index) => {
-                        return (
-                          <TextSpan key={index}>
-                            {text === " " ? "\u00A0" : text}
-                          </TextSpan>
-                        );
-                      })}
-                    </h1>
-                  </div>
-                  <div
-                    className="text-white text-2xl flex items-center gap-6"
-                    data-aos="fade-up"
-                  >
-                    <div className="w-[22px] h-[75px] bg-gradient-to-b from-[#E86319] to-[#FFE603] rounded-xl mt-2 text-transparent">
-                      {" "}
-                      p
-                    </div>
-                    <TypeAnimation
-                      // Same String at the start will only be typed once, initially
-                      sequence={[
-                        "Web Developer",
-                        1000,
-                        "UI/UX Designer",
-                        1000,
-                        "IoT Developer",
-                        1000,
-                        "Videographer",
-                        1000,
-                      ]}
-                      speed={50} // Custom Speed from 1-99 - Default Speed: 40
-                      style={{ fontSize: "1.5em" }}
-                      wrapper="span" // Animation will be rendered as a <span>
-                      repeat={Infinity} // Repeat this Animation Sequence infinitely
-                      className="text-white"
-                    />
-                  </div>
-                  <div
-                    className="max-w-[595px] text-white text-md my-2"
-                    data-aos="fade-up"
-                  >
-                    <p>
-                      A final year student at Gadjah Mada University Majoring in
-                      Information Technology. I am passioned with Software
-                      Engineer particularly in the dynamic realm of Web
-                      Development. With a rich background, I have contributed my
-                      skills and creativity to various freelance web development
-                      projects over the past two years and gained valuable
-                      experience through internships at reputable companies
-                    </p>
-                  </div>
-                  <div className="flex w-full h-fit mt-2 justify-start items-center text-white">
-                    <button
-                      className="rounded-[15px] bg-dark-grey text-white px-8 py-4"
-                      data-aos="fade-up"
-                    >
-                      <p className="text-lg">Download my CV</p>
-                    </button>
-                    <Link
-                      href="https://www.instagram.com/hasan.chamdany/"
-                      data-aos="fade-up"
-                    >
-                      <AiFillInstagram className="w-[40px] h-[40px] mx-1" />
-                    </Link>
-                    <Link
-                      href="https://github.com/hasanchamdany"
-                      data-aos="fade-up"
-                    >
-                      <AiFillGithub className="w-[40px] h-[40px] mx-1" />
-                    </Link>
-                    <Link href="https://wa.me/6281330666660" data-aos="fade-up">
-                      <AiOutlineWhatsApp className="w-[40px] h-[40px] mx-1" />
-                    </Link>
-                    <Link
-                      href="https://www.linkedin.com/in/muchammad-hasan-chamdany-090a1a196/"
-                      data-aos="fade-up"
-                    >
-                      <AiFillLinkedin className="w-[40px] h-[40px] mx-1" />
-                    </Link>
-                    <Link
-                      href="mailto:hasanchamdany@gmail.com"
-                      data-aos="fade-up"
-                    >
-                      <AiFillMail className="w-[40px] h-[40px] mx-1" />
-                    </Link>
-                  </div>
+            {/* <h1>test woe</h1> */}
+            <div className="flex lg:flex-row flex-col lg:gap-0 gap-12 lg:justify-between justify-center mx-10 lg:mx-36 pt-20 lg:pt-10 items-center min-h-screen">
+              <div className="   flex flex-col gap-2 font-bold ">
+                <div
+                  className=" bg-gradient-to-r from-[#B822FF] to-[#0D8BFF] text-transparent bg-clip-text"
+                  data-aos="fade-up"
+                >
+                  <h2 className="text-5xl">Hello there!, I am</h2>
                 </div>
                 <div
+                  className=" md:text-7xl text-3xl justify-start "
                   data-aos="fade-up"
-                  className="flex flex-row justify-center items-center min-w-[523px] lg:min-w-[523px] min-h-[523px] lg:min-h-[523px]"
-                  style={{
-                    width: "523px",
-                    height: "523px",
-                    borderRadius: "267px",
-                    background:
-                      "linear-gradient(226deg, #EB8B32 0%, #DCC535 100%)",
-                    boxShadow: "0px 0px 26.2px 12px #E0B835",
-                  }}
                 >
-                  <Image
-                    src={photo}
-                    alt="vector frontend"
-                    width={465}
-                    height={465}
-                    className="object-cover circularImage max-w-full max-h-full"
+                  <h1
+                    className="text-white "
                     style={{
-                      borderRadius: "228px",
-                      boxShadow: "0px 0px 30px 12px #E2AE34 inset",
+                      color:
+                        "linear-gradient(99deg, #B822FF 3.09%, #0D8BFF 100%)",
                     }}
-                    // layout={"responsive"}
+                  >
+                    {animationText.map((text, index) => {
+                      return (
+                        <TextSpan key={index}>
+                          {text === " " ? "\u00A0" : text}
+                        </TextSpan>
+                      );
+                    })}
+                  </h1>
+                </div>
+                <div
+                  className="text-white text-2xl flex items-center gap-6"
+                  data-aos="fade-up"
+                >
+                  <div className="w-[22px] h-[75px] bg-gradient-to-b from-[#E86319] to-[#FFE603] rounded-xl mt-2 text-transparent">
+                    {" "}
+                    p
+                  </div>
+                  <TypeAnimation
+                    // Same String at the start will only be typed once, initially
+                    sequence={[
+                      "Web Developer",
+                      1000,
+                      "UI/UX Designer",
+                      1000,
+                      "IoT Developer",
+                      1000,
+                      "Videographer",
+                      1000,
+                    ]}
+                    speed={50} // Custom Speed from 1-99 - Default Speed: 40
+                    style={{ fontSize: "1.5em" }}
+                    wrapper="span" // Animation will be rendered as a <span>
+                    repeat={Infinity} // Repeat this Animation Sequence infinitely
+                    className="text-white"
                   />
                 </div>
+                <div
+                  className="max-w-[595px] text-white text-md my-2"
+                  data-aos="fade-up"
+                >
+                  <p>
+                    A final year student at Gadjah Mada University Majoring in
+                    Information Technology. I am passioned with Software
+                    Engineer particularly in the dynamic realm of Web
+                    Development. With a rich background, I have contributed my
+                    skills and creativity to various freelance web development
+                    projects over the past two years and gained valuable
+                    experience through internships at reputable companies
+                  </p>
+                </div>
+                <div className="flex w-full h-fit mt-2 justify-start items-center text-white">
+                  <button
+                    className="rounded-[15px] bg-dark-grey text-white px-8 py-4 sliding-button"
+                    data-aos="fade-up"
+                  >
+                    <span className="text-lg relative" style={{ zIndex: 2 }}>
+                      Download my CV
+                    </span>
+                    <span className="slide"></span>
+                  </button>
+                  <Link
+                    href="https://www.instagram.com/hasan.chamdany/"
+                    data-aos="fade-up"
+                  >
+                    <AiFillInstagram className="w-10 h-10 mx-1 icon transition-transform hover:scale-125 hover:text-[#CD1779] hover:shadow-lg" />
+                  </Link>
+                  <Link
+                    href="https://github.com/hasanchamdany"
+                    data-aos="fade-up"
+                  >
+                    <AiFillGithub className="w-10 h-10 mx-1 icon transition-transform hover:scale-125 hover:text-[#666666] hover:shadow-lg" />
+                  </Link>
+                  <Link href="https://wa.me/6281330666660" data-aos="fade-up">
+                    <AiOutlineWhatsApp className="w-10 h-10 mx-1 icon transition-transform hover:scale-125 hover:text-[#19A941] hover:shadow-lg" />
+                  </Link>
+                  <Link
+                    href="https://www.linkedin.com/in/muchammad-hasan-chamdany-090a1a196/"
+                    data-aos="fade-up"
+                  >
+                    <AiFillLinkedin className="w-10 h-10 mx-1 icon transition-transform hover:scale-125 hover:text-[#195BA9] hover:shadow-lg" />
+                  </Link>
+                  <Link
+                    href="mailto:hasanchamdany@gmail.com"
+                    data-aos="fade-up"
+                  >
+                    <AiFillMail className="w-10 h-10 mx-1 icon transition-transform hover:scale-125 hover:text-[#FFE603] hover:shadow-lg" />
+                  </Link>
+                </div>
               </div>
+              <div
+                data-aos="fade-up"
+                className="flex flex-row justify-center items-center min-w-[523px] lg:min-w-[523px] min-h-[523px] lg:min-h-[523px]"
+                style={{
+                  width: "523px",
+                  height: "523px",
+                  borderRadius: "267px",
+                  background:
+                    "linear-gradient(226deg, #EB8B32 0%, #DCC535 100%)",
+                  boxShadow: "0px 0px 26.2px 12px #E0B835",
+                }}
+              >
+                <Image
+                  src={photo}
+                  alt="vector frontend"
+                  width={465}
+                  height={465}
+                  className="object-cover circularImage max-w-full max-h-full"
+                  style={{
+                    borderRadius: "228px",
+                    boxShadow: "0px 0px 30px 12px #E2AE34 inset",
+                  }}
+                  // layout={"responsive"}
+                />
+              </div>
+            </div>
           </div>
           <div className="w-full min-h-screen bg-dark-base">
             <div className="flex flex-col lg:flex-row justify-center lg:justify-between pt-12 mx-4 lg:mx-20 lg:pt-10">
@@ -214,7 +217,12 @@ export default function Home() {
                   </h3>
                 </div>
                 <div className="flex flex-wrap justify-end max-w-[645px] pt-10">
-                  <AnimatedLogo logo="./../../public/images/skillset/1.svg"  width={80} height={80} alt="Logo 1"/>
+                  <AnimatedLogo
+                    logo="./../../public/images/skillset/1.svg"
+                    width={80}
+                    height={80}
+                    alt="Logo 1"
+                  />
                   <motion.div
                     data-aos="fade-up"
                     whileHover={{ scale: 1.2 }}

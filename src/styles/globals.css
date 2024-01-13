@@ -20,3 +20,31 @@
 span {
     display: inline-block;
 }
+
+.sliding-button {
+  @apply relative inline-block;
+  @apply rounded-[15px] bg-dark-grey text-white px-8 py-4;
+  overflow: hidden;
+  cursor: pointer;
+  border: none; /* Remove default button styles */
+  outline: none; /* Remove default button styles */
+}
+
+
+/* In your component's styles */
+.slide {
+    @apply absolute top-0 left-0 w-0 h-full bg-blue-500; /* Adjust the color as needed */
+    @apply transition-width duration-300 ease-in-out;
+  }
+
+  /* In your styles.css or styles.scss file */
+@layer utilities {
+    .transition-width {
+      transition-property: width;
+    }
+  }
+  
+
+.sliding-button:hover .slide {
+  @apply w-full;
+}
