@@ -48,6 +48,7 @@ import logo17 from "./../../public/images/skillset/17.svg";
 import logo18 from "./../../public/images/skillset/18.svg";
 import logo19 from "./../../public/images/skillset/19.svg";
 import logo20 from "./../../public/images/skillset/20.svg";
+import AnimatedLogo from "@/components/AnimatedIcon/AnimatedLogo.jsx";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -57,11 +58,10 @@ export default function Home() {
     <>
       <DefaultLayout>
         {/* <Navbar /> */}
-        <div className="w-full">
-          <div className=" h-screen w-full ">
-            <div className="bg-dark-base  w-full h-screen">
+        <div className="w-full h-fit">
+          <div className="block bg-dark-base  w-full min-h-screen">
               {/* <h1>test woe</h1> */}
-              <div className="md:flex flex-row justify-between mx-36 items-center h-screen block">
+              <div className="flex lg:flex-row flex-col lg:gap-0 gap-12 lg:justify-between justify-center mx-10 lg:mx-36 pt-20 lg:pt-10 items-center min-h-screen">
                 <div className="   flex flex-col gap-2 font-bold ">
                   <div
                     className=" bg-gradient-to-r from-[#B822FF] to-[#0D8BFF] text-transparent bg-clip-text"
@@ -168,10 +168,10 @@ export default function Home() {
                 </div>
                 <div
                   data-aos="fade-up"
-                  className="flex justify-center items-center"
+                  className="flex flex-row justify-center items-center min-w-[523px] lg:min-w-[523px] min-h-[523px] lg:min-h-[523px]"
                   style={{
                     width: "523px",
-                    height: "514px",
+                    height: "523px",
                     borderRadius: "267px",
                     background:
                       "linear-gradient(226deg, #EB8B32 0%, #DCC535 100%)",
@@ -183,7 +183,7 @@ export default function Home() {
                     alt="vector frontend"
                     width={465}
                     height={465}
-                    className="circularImage"
+                    className="object-cover circularImage max-w-full max-h-full"
                     style={{
                       borderRadius: "228px",
                       boxShadow: "0px 0px 30px 12px #E2AE34 inset",
@@ -192,12 +192,11 @@ export default function Home() {
                   />
                 </div>
               </div>
-            </div>
           </div>
-          <div className="w-full h-screen bg-dark-base">
-            <div className="flex justify-between mx-20 pt-8">
+          <div className="w-full min-h-screen bg-dark-base">
+            <div className="flex flex-col lg:flex-row justify-center lg:justify-between pt-12 mx-4 lg:mx-20 lg:pt-10">
               {/* Card */}
-              <div className="flex flex-row gap-12">
+              <div className="flex flex-row gap-12 justify-center">
                 <div className="flex flex-col gap-8">
                   <RoleCard image={webDev} text="Web Development" />
                   <RoleCard image={iot} text="IoT Developer" />
@@ -215,6 +214,7 @@ export default function Home() {
                   </h3>
                 </div>
                 <div className="flex flex-wrap justify-end max-w-[645px] pt-10">
+                  <AnimatedLogo logo="./../../public/images/skillset/1.svg"  width={80} height={80} alt="Logo 1"/>
                   <motion.div
                     data-aos="fade-up"
                     whileHover={{ scale: 1.2 }}
