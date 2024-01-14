@@ -33,7 +33,7 @@ span {
 
 /* In your component's styles */
 .slide {
-    @apply absolute top-0 left-0 w-0 h-full bg-blue-500; /* Adjust the color as needed */
+    @apply absolute top-0 left-0 w-0 h-full bg-medium-grey; /* Adjust the color as needed */
     @apply transition-width duration-300 ease-in-out;
   }
 
@@ -48,3 +48,11 @@ span {
 .sliding-button:hover .slide {
   @apply w-full;
 }
+
+.circularImage {
+    borderRadius: '50%';
+    boxShadow: '0px 0px 30px 12px #E2AE34 inset';
+  }
+  .gradient-title {
+    textColor: 'linear-gradient(99deg, #B822FF 3.09%, #0D8BFF 100%)'
+  }

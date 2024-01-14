@@ -1,0 +1,52 @@
+backend:
+  name: git-gateway
+  branch: main
+media_folder: /public/uploads
+public_folder: /uploads
+collections:
+  - name: project
+    label: Project
+    create: true
+    folder: _posts/project
+    slug: '{{slug}}'
+    fields:
+      - label: Judul
+        name: title
+        widget: string
+      - label: Deskripsi
+        name: desc
+        widget: string
+      - label: Tampilkan di halaman utama
+        name: featured
+        widget: boolean
+      - label: Gambar Thumbnail
+        name: thumbnail
+        widget: image
+      - label: Tanggal Publish
+        name: date
+        widget: datetime
+      - label: Tag (pisahkan dengan koma)
+        name: tags
+        widget: string
+        hint: 'Contoh: KKN-PPM UGM, Wisata'
+      - label: Isi Halaman
+        name: body
+        widget: markdown
+      - label: Link Repository
+        name: repoUrl
+        widget: string
+        required: false
+      - label: Galeri
+        name: gallery
+        widget: list
+        fields:
+          - label: Gambar
+            name: image
+            widget: image
+      - label: Files
+        name: files
+        widget: list
+        fields:
+          - label: File
+            name: file
+            widget: file
