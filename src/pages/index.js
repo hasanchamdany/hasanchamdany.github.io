@@ -62,15 +62,15 @@ export default function Home() {
           <div className="block bg-dark-base  w-full min-h-screen">
             {/* <h1>test woe</h1> */}
             <div className="flex lg:flex-row flex-col lg:gap-0 gap-12 lg:justify-between justify-center mx-10 lg:mx-36 pt-20 lg:pt-10 items-center min-h-screen">
-              <div className="   flex flex-col gap-2 font-bold ">
+              <div className="flex flex-col gap-2 font-bold  ">
                 <div
-                  className=" bg-gradient-to-r from-[#B822FF] to-[#0D8BFF] text-transparent bg-clip-text"
+                  className=" bg-gradient-to-r from-[#B822FF] to-[#0D8BFF] text-transparent bg-clip-text mx-4 lg:mx-0"
                   data-aos="fade-up"
                 >
-                  <h2 className="text-5xl">Hello there!, I am</h2>
+                  <h2 className="text-3xl lg:text-5xl">Hello there!, I am</h2>
                 </div>
                 <div
-                  className=" md:text-7xl text-3xl justify-start "
+                  className=" lg:text-7xl text-4xl justify-start mx-4 lg:mx-0"
                   data-aos="fade-up"
                 >
                   <h1
@@ -90,7 +90,7 @@ export default function Home() {
                   </h1>
                 </div>
                 <div
-                  className="text-white text-2xl flex items-center gap-6"
+                  className="text-white text-2xl flex items-center gap-6 mx-4 lg:mx-0"
                   data-aos="fade-up"
                 >
                   <div className="w-[22px] h-[75px] bg-gradient-to-b from-[#E86319] to-[#FFE603] rounded-xl mt-2 text-transparent">
@@ -117,7 +117,7 @@ export default function Home() {
                   />
                 </div>
                 <div
-                  className="max-w-[595px] text-white text-md my-2"
+                  className="max-w-[595px] text-white text-md my-2 mx-4 lg:mx-0"
                   data-aos="fade-up"
                 >
                   <p>
@@ -130,12 +130,12 @@ export default function Home() {
                     experience through internships at reputable companies
                   </p>
                 </div>
-                <div className="flex w-full h-fit mt-2 justify-start items-center text-white">
+                <div className="flex w-full h-fit mt-2  justify-start items-center text-white">
                   <button
-                    className="rounded-[15px] bg-dark-grey text-white px-8 py-4 sliding-button"
+                    className="rounded-[15px] bg-dark-grey text-white px-3 lg:px-8 py-1 lg:py-4 hover:text-[#FFE603] sliding-button"
                     data-aos="fade-up"
                   >
-                    <span className="text-lg relative" style={{ zIndex: 2 }}>
+                    <span className="text-lg relative " style={{ zIndex: 2 }}>
                       Download my CV
                     </span>
                     <span className="slide"></span>
@@ -199,24 +199,24 @@ export default function Home() {
           <div className="w-full min-h-screen bg-dark-base">
             <div className="flex flex-col lg:flex-row justify-center lg:justify-between pt-12 mx-4 lg:mx-20 lg:pt-10">
               {/* Card */}
-              <div className="flex flex-row gap-12 justify-center">
-                <div className="flex flex-col gap-8">
+              <div className="flex flex-row gap-6 lg:gap-12 justify-center">
+                <div className="flex flex-col gap-4 lg:gap-8">
                   <RoleCard image={webDev} text="Web Development" />
                   <RoleCard image={iot} text="IoT Developer" />
                 </div>
-                <div className="flex flex-col gap-8 mt-20">
+                <div className="flex flex-col gap-4 lg:gap-8 mt-20">
                   <RoleCard image={uiux} text="UIUX Designer" />
                   <RoleCard image={video} text="Videographer" />
                 </div>
               </div>
               {/* Techstack */}
               <div>
-                <div data-aos="fade-left">
-                  <h3 className="text-white text-5xl font-bold">
+                <div data-aos=" fade-left" className="pt-6 lg:pt-0">
+                  <h3 className="text-white text-center lg:text-start text-3xl lg:text-5xl font-bold">
                     My Skills Set
                   </h3>
                 </div>
-                <div className="flex flex-wrap justify-end max-w-[645px] pt-10">
+                <div className="flex flex-wrap justify-center lg:justify-end max-w-[645px] pt-10">
                   <AnimatedLogo
                     logo="./../../public/images/skillset/1.svg"
                     width={80}
@@ -627,24 +627,6 @@ export default function Home() {
               </div>
             </div>
           </div>
-          {/* <div className="sm:block hidden h-screen w-full">
-        <div className="bg-dark-base w-full h-[1080px]">
-          <div className="flex">
-            <div className="pt-36 pl-8 ">
-              <Image
-                src={HumanVector}
-                alt="programmer vector"
-                width={346}
-                height={876}
-              />
-            </div>
-            <div className="w-[1400px]  pt-[390px] pl-20">
-              <h1 className="text-5xl font-bold text-white">Recent Project</h1>
-              <Carousel />
-            </div>
-          </div>
-        </div>
-      </div> */}
         </div>
       </DefaultLayout>
     </>

@@ -277,10 +277,3 @@
   }
 }
 
-.circularImage {
-  borderRadius: '50%';
-  boxShadow: '0px 0px 30px 12px #E2AE34 inset';
-}
-.gradient-title {
-  textColor: 'linear-gradient(99deg, #B822FF 3.09%, #0D8BFF 100%)'
-}
