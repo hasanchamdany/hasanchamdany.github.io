@@ -217,12 +217,6 @@ export default function Home() {
                   </h3>
                 </div>
                 <div className="flex flex-wrap justify-center lg:justify-end max-w-[645px] pt-10">
-                  <AnimatedLogo
-                    logo="./../../public/images/skillset/1.svg"
-                    width={80}
-                    height={80}
-                    alt="Logo 1"
-                  />
                   <motion.div
                     data-aos="fade-up"
                     whileHover={{ scale: 1.2 }}
