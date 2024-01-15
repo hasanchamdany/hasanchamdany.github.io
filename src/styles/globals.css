@@ -7,6 +7,10 @@
     background: linear-gradient(93deg, #252531 0%, #353543 100%);
 }
 
+.background-image-project-page{
+    background: rgba(26, 26, 30, 0.70);
+  }
+
 .animation-text {
     background : linear-gradient(99deg, #B822FF 3.09%, #0D8BFF 100%);
     -webkit-background-clip: 'text';
@@ -56,3 +60,4 @@ span {
   .gradient-title {
     textColor: 'linear-gradient(99deg, #B822FF 3.09%, #0D8BFF 100%)'
   }
+
