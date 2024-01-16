@@ -66,30 +66,34 @@ const Index = ({ projects }) => {
             </div>
           </div>
           <div className="grid justify-center mx-auto w-full max-w-[1426px] h-fit py-10 -translate-y-[120px] blur-background">
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-6 mx-6">
               <ProjectCard
                 src={dummyProject}
                 title="dummy project"
                 desc="ini adalah dummy project untuk web portofolio hasan"
                 className="w-full max-w-[420px]"
+                url="/"
               />
               <ProjectCard
                 src={dummyProject}
                 title="dummy project"
                 desc="ini adalah dummy project untuk web portofolio hasan"
                 className="w-full max-w-[420px]"
+                url="/"
               />
               <ProjectCard
                 src={dummyProject}
                 title="dummy project"
                 desc="ini adalah dummy project untuk web portofolio hasan"
                 className="w-full max-w-[420px]"
+                url="/"
               />
               <ProjectCard
                 src={dummyProject}
                 title="dummy project"
                 desc="ini adalah dummy project untuk web portofolio hasan"
                 className="w-full max-w-[420px]"
+                url="/"
               />
             </div>
           </div>
