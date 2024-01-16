@@ -6,7 +6,7 @@ import Image from "next/image";
 const RoleCard = ({ image, text }) => {
   return (
     <TiltComponent>
-      <div className="flex flex-col justify-center rounded-[30px] role-card focus:scale-105 focus:outline-none shadow-lg shadow-black hover:shadow-[#DCC535] transition-shadow">
+      <div className="flex flex-col justify-center rounded-[30px] role-card focus:scale-105 focus:outline-none shadow-lg shadow-black hover:shadow-[#e763a5] transition-transform hover:scale-105">
         <div className="lg:p-14 p-6" data-aos="fade-up">
           <Image src={image} width={200} />
         </div>
