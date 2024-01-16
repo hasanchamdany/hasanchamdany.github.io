@@ -72,24 +72,28 @@ const Index = ({ projects }) => {
                 title="dummy project"
                 desc="ini adalah dummy project untuk web portofolio hasan"
                 className="w-full max-w-[420px]"
+                url="/"
               />
               <ProjectCard
                 src={dummyProject}
                 title="dummy project"
                 desc="ini adalah dummy project untuk web portofolio hasan"
                 className="w-full max-w-[420px]"
+                url="/"
               />
               <ProjectCard
                 src={dummyProject}
                 title="dummy project"
                 desc="ini adalah dummy project untuk web portofolio hasan"
                 className="w-full max-w-[420px]"
+                url="/"
               />
               <ProjectCard
                 src={dummyProject}
                 title="dummy project"
                 desc="ini adalah dummy project untuk web portofolio hasan"
                 className="w-full max-w-[420px]"
+                url="/"
               />
             </div>
           </div>

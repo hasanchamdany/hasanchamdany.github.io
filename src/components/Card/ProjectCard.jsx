@@ -72,7 +72,7 @@ const ProjectCard = (props) => {
 
   return (
     <TiltComponent>
-        <Link href="/" className="">
+        <Link href={props.url} className="">
       <div className="role-card focus:scale-105 focus:outline-none shadow-sm shadow-black hover:shadow-white  rounded-2xl transition-transform hover:scale-105">
         <div className="flex justify-center">
           <Image

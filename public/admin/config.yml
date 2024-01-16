@@ -22,9 +22,14 @@ collections:
       - label: Gambar Thumbnail
         name: thumbnail
         widget: image
-      - label: Tanggal Publish
-        name: date
-        widget: datetime
+      - label: Link Repository
+        name: repoUrl
+        widget: string
+        required: false
+      - label: Techstack (pisahkan dengan koma)
+        name: techstack
+        widget: string
+        hint: 'git, vuejs, reactjs, nodejs, github, arduino, cpp, nextjs, html, css, firebase, sql, postgreesql, pythom, js, ts, mongodb'
       - label: Tag (pisahkan dengan koma)
         name: tags
         widget: string
@@ -32,10 +37,6 @@ collections:
       - label: Isi Halaman
         name: body
         widget: markdown
-      - label: Link Repository
-        name: repoUrl
-        widget: string
-        required: false
       - label: Galeri
         name: gallery
         widget: list
