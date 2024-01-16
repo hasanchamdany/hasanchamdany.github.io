@@ -67,7 +67,7 @@ export default function Home() {
                   className=" bg-gradient-to-r from-[#B822FF] to-[#0D8BFF] text-transparent bg-clip-text mx-4 lg:mx-0"
                   data-aos="fade-up"
                 >
-                  <h2 className="text-3xl lg:text-5xl">Hello there!, I am</h2>
+                  <h2 className="text-2xl lg:text-5xl">Hello there!, I am</h2>
                 </div>
                 <div
                   className=" lg:text-7xl text-4xl justify-start mx-4 lg:mx-0"
@@ -93,7 +93,7 @@ export default function Home() {
                   className="text-white text-2xl flex items-center gap-6 mx-4 lg:mx-0"
                   data-aos="fade-up"
                 >
-                  <div className="w-[22px] h-[75px] bg-gradient-to-b from-[#E86319] to-[#FFE603] rounded-xl mt-2 text-transparent">
+                  <div className="w-[14px] sm:w-[22px] h-[75px] bg-gradient-to-b from-[#E86319] to-[#FFE603] rounded-xl mt-2 text-transparent">
                     {" "}
                     p
                   </div>
@@ -130,16 +130,20 @@ export default function Home() {
                     experience through internships at reputable companies
                   </p>
                 </div>
-                <div className="flex w-full h-fit mt-2  justify-start items-center text-white">
+                <div className="flex flex-col gap-3 sm:gap-0 sm:flex-row w-full h-fit mt-2  justify-start items-center text-white">
+                  <div>
+
                   <button
                     className="rounded-[15px] bg-dark-grey text-white px-3 lg:px-8 py-1 lg:py-4 hover:text-[#FFE603] sliding-button"
                     data-aos="fade-up"
-                  >
+                    >
                     <span className="text-lg relative " style={{ zIndex: 2 }}>
                       Download my CV
                     </span>
                     <span className="slide"></span>
                   </button>
+                    </div>
+                    <div className="flex">
                   <Link
                     href="https://www.instagram.com/hasan.chamdany/"
                     data-aos="fade-up"
@@ -167,6 +171,7 @@ export default function Home() {
                   >
                     <AiFillMail className="w-10 h-10 mx-1 icon transition-transform hover:scale-125 hover:text-[#FFE603] hover:shadow-lg" />
                   </Link>
+                    </div>
                 </div>
               </div>
               <div
