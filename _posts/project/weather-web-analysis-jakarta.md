@@ -1,20 +1,17 @@
 ---
-title: Weather Web Analysis Jakarta
-desc: Web Informasi meteorologi untuk menyajikan informasi tingkat curah hujan
-  dan korelasinya dengan jumlah kasus penyakit Demam Berdarah Dengue di daerah
-  DKI Jakarta.
+title: Weather ETL Airflow
+desc: Data Engineering project untuk melakukan proses ETL (Extract. Trams[prt.
+  Load) pada data cuaca BMKG
 featured: true
-thumbnail: /uploads/weather-web.png
-repoUrl: https://github.com/hasanchamdany/weather-web-analysis
-techstack: html, css, js, git, github
-tags: web
+thumbnail: /uploads/weather-etl-airflow.png
+repoUrl: https://github.com/hasanchamdany/Weather-ETL-Airflow
+techstack: python, docker
+tags: data-engineering
 ---
-# Meteorology and Dengue Information of Jakarta Province
+# Apache Airflow ETL Case Study with Weather BMKG's Data
 
-### Latar Belakang
-
-Indonesia mengalami wabah Demam Berdarah Dengue yang signifikan pada tahun 2018, Dinas Kesehatan DKI Jakarta tahun 2018 menunjukkan DKI Jakarta mengalami persebaran kasus penyakit Demam Berdarah Dengue yang cukup tinggi pada tiap daerahnya dan memiliki sejumlah kasus terbanyak pada tahun 2018. Di Indonesia Demam Berdarah Dengue merupakan salah satu masalah kesehatan masyarakat yang tergolong cukup serius karena penderitanya tiap tahun semakin meningkat serta penyebarannya yang begitu cepat. Penyakit DBD dapat ditularkan pada anak-anak yang berusia kurang dari 15 tahun hingga pada orang dewasa (Kemenkes RI, 2018).
+Data Engineer Project case untuk Ekstraksi data cuaca melalui API BMKG dan melakukan scheduling untuk ekstraksi setiap set-point nya dan melakukan cleaning data serta pengolahan data sebelum di load.
 
 ### Tujuan
 
-Untuk menyajikan informasi tingkat curah hujan dan korelasinya dengan jumlah kasus penyakit Demam Berdarah Dengue di daerah DKI Jakarta.
+untuk menerapkan konsep ETL pada Data Engineering menggunakan scheduler Apache Airflow
