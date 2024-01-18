@@ -25,8 +25,10 @@ import figma from "../../../public/images/skillset/19.svg";
 import premierepro from "../../../public/images/skillset/20.svg";
 
 const ProjectCard = (props) => {
-  const dummy = "git, vuejs, postgreesql, python, firebase";
-  const techStack = dummy.split(",").map((tech) => tech.trim());
+  //   const dummy = "git, vuejs, postgreesql, python, firebase";
+  const techStack = props.techstack
+    ? props.techstack.split(",").map((tech) => tech.trim())
+    : [];
 
   const getTechLogo = (tech) => {
     switch (tech.toLowerCase()) {
@@ -70,40 +72,59 @@ const ProjectCard = (props) => {
     }
   };
 
+  const getGenreColor = (genre) => {
+    switch (genre) {
+      case "web":
+        return "#33B950";
+      case "data-engineering":
+        return "#0D8BFF";
+      case "deep-learning":
+        return "#E0B835";
+      default:
+        return "transparent"; // or any default color
+    }
+  };
+
   return (
     <TiltComponent>
-        <Link href={props.url} className="">
-      <div className="role-card focus:scale-105 focus:outline-none shadow-sm shadow-black hover:shadow-white  rounded-2xl transition-transform hover:scale-105">
-        <div className="flex justify-center">
-          <Image
-            src={props.src}
-            alt="image card"
-            width={380}
-            height={200}
-            className="flex justify-center pt-2 px-2 rounded-[15px]"
+      <Link href={props.url} className="">
+        <div className="role-card focus:scale-105 focus:outline-none shadow-sm shadow-black hover:shadow-white  rounded-2xl transition-transform hover:scale-105">
+          <div className="flex justify-center">
+            <Image
+              src={props.src}
+              alt="image card"
+              width={380}
+              height={200}
+              className="flex justify-center pt-2 px-2 rounded-[15px]"
             />
-        </div>
-        <div className="flex flex-col gap-4 text-white max-w-[350px] py-4 px-4">
-          <h1 className="text-xl font-bold ml-4">{props.title}</h1>
-          <p className="ml-4">{props.desc}</p>
+          </div>
+          <div className="flex flex-col gap-4 text-white max-w-[350px] py-4 px-4">
+            <h1 className="text-xl font-bold ml-4">{props.title}</h1>
+            <p className="ml-4">{props.desc}</p>
 
-          <div className="flex flex-wrap ml-4 mt-2">
-            {techStack.map((tech, index) => (
-              <div key={index} className="mr-2 mb-2">
-                {getTechLogo(tech) && (
-                  <Image
-                    src={getTechLogo(tech)}
-                    alt={`${tech} logo`}
-                    width={30}
-                    height={30}
-                  />
-                )}
-              </div>
-            ))}
+            <div className="flex flex-wrap ml-4 mt-2">
+              {techStack.map((tech, index) => (
+                <div key={index} className="mr-2 mb-2">
+                  {getTechLogo(tech) && (
+                    <Image
+                      src={getTechLogo(tech)}
+                      alt={`${tech} logo`}
+                      width={30}
+                      height={30}
+                    />
+                  )}
+                </div>
+              ))}
+            </div>
+            <div
+              className="rounded-[15px] flex justify-center ml-4 mb-2 w-fit px-3 py-1"
+              style={{ backgroundColor: getGenreColor(props.genre) }}
+            >
+              <p className="text-lg font-bold text-dark-grey">{props.genre}</p>
+            </div>
           </div>
         </div>
-      </div>
-            </Link>
+      </Link>
     </TiltComponent>
   );
 };
