@@ -87,9 +87,9 @@ const ProjectCard = (props) => {
 
   return (
     <TiltComponent>
-      <Link href={props.url} className="">
+      <Link data-aos="fade-up" href={props.url} className="">
         <div className="role-card focus:scale-105 focus:outline-none shadow-sm shadow-black hover:shadow-white  rounded-2xl transition-transform hover:scale-105">
-          <div className="flex justify-center">
+          <div data-aos="fade-up" className="flex justify-center">
             <Image
               src={props.src}
               alt="image card"
@@ -99,12 +99,16 @@ const ProjectCard = (props) => {
             />
           </div>
           <div className="flex flex-col gap-4 text-white max-w-[350px] py-4 px-4">
-            <h1 className="text-xl font-bold ml-4">{props.title}</h1>
-            <p className="ml-4">{props.desc}</p>
+            <h1 data-aos="fade-up" className="text-xl font-bold ml-4">
+              {props.title}
+            </h1>
+            <p data-aos="fade-up" className="ml-4">
+              {props.desc}
+            </p>
 
             <div className="flex flex-wrap ml-4 mt-2">
               {techStack.map((tech, index) => (
-                <div key={index} className="mr-2 mb-2">
+                <div data-aos="fade-up" key={index} className="mr-2 mb-2">
                   {getTechLogo(tech) && (
                     <Image
                       src={getTechLogo(tech)}
@@ -117,6 +121,7 @@ const ProjectCard = (props) => {
               ))}
             </div>
             <div
+              data-aos="fade-up"
               className="rounded-[15px] flex justify-center ml-4 mb-2 w-fit px-3 py-1"
               style={{ backgroundColor: getGenreColor(props.genre) }}
             >
