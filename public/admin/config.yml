@@ -51,3 +51,45 @@ collections:
           - label: File
             name: file
             widget: file
+  - name: experience
+    label: experience
+    create: true
+    folder: _posts/experience
+    slug: '{{slug}}'
+    fields:
+      - label: Judul
+        name: title
+        widget: string
+      - label: Timestamp
+        name: timestamp
+        widget: date
+        dateFormat: "MMMM YYYY"
+        hint: "Format: August 2023 - December 2023"
+      - label: Deskripsi
+        name: desc
+        widget: string
+      - label: Gambar Thumbnail
+        name: thumbnail
+        widget: image
+        required: false
+      - label: Techstack (pisahkan dengan koma)
+        name: techstack
+        widget: string
+        hint: 'git, vuejs, reactjs, nodejs, github, arduino, cpp, nextjs, html, css, firebase, sql, postgreesql, pythom, js, ts, mongodb'
+      - label: Isi Halaman
+        name: body
+        widget: markdown
+      - label: Galeri
+        name: gallery
+        widget: list
+        fields:
+          - label: Gambar
+            name: image
+            widget: image
+      - label: Files
+        name: files
+        widget: list
+        fields:
+          - label: File
+            name: file
+            widget: file
