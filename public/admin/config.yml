@@ -52,7 +52,7 @@ collections:
             name: file
             widget: file
   - name: experience
-    label: experience
+    label: Experience
     create: true
     folder: _posts/experience
     slug: '{{slug}}'
@@ -62,7 +62,7 @@ collections:
         widget: string
       - label: Timestamp
         name: timestamp
-        widget: date
+        widget: datetime
         dateFormat: "MMMM YYYY"
         hint: "Format: August 2023 - December 2023"
       - label: Deskripsi
