@@ -60,8 +60,13 @@ collections:
       - label: Judul
         name: title
         widget: string
-      - label: Timestamp
-        name: timestamp
+      - label: Waktu Mulai
+        name: start_timestamp
+        widget: datetime
+        dateFormat: "MMMM YYYY"
+        hint: "Format: August 2023 - December 2023"
+      - label: Waktu Selesai
+        name: end_timestamp
         widget: datetime
         dateFormat: "MMMM YYYY"
         hint: "Format: August 2023 - December 2023"
