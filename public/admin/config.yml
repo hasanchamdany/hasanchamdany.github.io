@@ -57,9 +57,14 @@ collections:
     folder: _posts/experience
     slug: '{{slug}}'
     fields:
-      - label: Judul
+      - label: Judul Pengalaman
         name: title
         widget: string
+        hint: "Software Engineer (Frontend)"
+      - label: Instansi
+        name: institution
+        widget: string
+        hint: "PT Lunar Inovasi Teknologi"
       - label: Waktu Mulai
         name: start_timestamp
         widget: datetime
