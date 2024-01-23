@@ -65,19 +65,26 @@ collections:
         name: institution
         widget: string
         hint: "PT Lunar Inovasi Teknologi"
-      - label: Waktu Mulai
-        name: start_timestamp
-        widget: datetime
-        dateFormat: "MMMM YYYY"
-        hint: "Format: August 2023 - December 2023"
-      - label: Waktu Selesai
-        name: end_timestamp
-        widget: datetime
-        dateFormat: "MMMM YYYY"
-        hint: "Format: August 2023 - December 2023"
-      - label: Deskripsi
-        name: desc
-        widget: string
+      - label: Role
+        name: role
+        widget: list
+        fields:
+          - label: Job Role
+            name: job_role
+            widget: string
+          - label: Waktu Mulai
+            name: start_timestamp
+            widget: datetime
+            dateFormat: "MMMM YYYY"
+            hint: "Format: August 2023 - December 2023"
+          - label: Waktu Selesai
+            name: end_timestamp
+            widget: datetime
+            dateFormat: "MMMM YYYY"
+            hint: "Format: August 2023 - December 2023"
+          - label: Deskripsi
+            name: desc
+            widget: string
       - label: Gambar Thumbnail
         name: thumbnail
         widget: image
